@@ -15,6 +15,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        "primary-light": "#B2B3B2",
+      },
       fontFamily: {
         geistMono: "var(--font-geist-mono)",
         geistSans: "var(--font-geist-sans)",
