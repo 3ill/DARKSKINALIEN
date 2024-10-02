@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .nav_item_text {
+        @apply  font-Azeret text-[16px] font-black uppercase text-primary_dark dark:text-primary_light
+    }
+
+    .nav_hover_effect {
+        @apply h-[2px] w-0 rounded-md bg-primary_dark transition-all duration-300 group-hover:w-full dark:bg-primary_light
+    }
+}
