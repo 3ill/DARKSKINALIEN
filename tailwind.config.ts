@@ -22,6 +22,7 @@ module.exports = {
         geistMono: "var(--font-geist-mono)",
         geistSans: "var(--font-geist-sans)",
         helvetica: "var(--font-helvetica)",
+        Azeret: ["Azeret Mono", "Monospace"],
       },
     },
   },
