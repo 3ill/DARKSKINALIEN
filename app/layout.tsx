@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${helvetica.variable} bg-primary-light antialiased bg-grid-black/[0.03] dark:bg-black dark:bg-grid-slate-300/[0.01]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${helvetica.variable} dark:bg-primary_dark bg-primary_light antialiased bg-grid-black/[0.03] dark:bg-grid-slate-300/[0.01]`}
       >
         <ThemeContextProvider>{children}</ThemeContextProvider>
       </body>
