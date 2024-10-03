@@ -12,4 +12,8 @@
     .nav_hover_effect {
         @apply h-[2px] w-0 rounded-md bg-primary_dark transition-all duration-300 group-hover:w-full dark:bg-primary_light
     }
+
+    .text_variant {
+        @apply text-primary_dark dark:text-primary_light hover:text-black hover:dark:text-white hover:scale-110 active:scale-105 transition-all
+    }
 }
