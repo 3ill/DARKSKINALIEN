@@ -92,7 +92,7 @@ const Nav = () => {
         />
 
         <div
-          className={`absolute top-[12px] ml-[320px] items-center rounded-[15px] bg-[#252525] bg-opacity-30 px-2 py-1 backdrop-blur-md dark:bg-[#252525] dark:bg-opacity-50 ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
+          className={`absolute top-[12px] right-2 items-center rounded-[15px] bg-[#252525] bg-opacity-30 px-2 py-1 backdrop-blur-md dark:bg-[#252525] dark:bg-opacity-50 ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
           onClick={setToggled}
         >
           <Image
