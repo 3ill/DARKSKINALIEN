@@ -92,7 +92,8 @@ const Nav = () => {
         />
 
         <div
-          className={`absolute top-[10px] ml-[320px] items-center rounded-[15px] bg-[#252525] dark:bg-[#252525] px-2 py-1 bg-opacity-30 dark:bg-opacity-50 backdrop-blur-md ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
+          className={`absolute top-[12px] ml-[320px] items-center rounded-[15px] bg-[#252525] bg-opacity-30 px-2 py-1 backdrop-blur-md dark:bg-[#252525] dark:bg-opacity-50 ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
+          onClick={setToggled}
         >
           <Image
             src={
@@ -107,7 +108,6 @@ const Nav = () => {
             alt={`menu`}
             width={25}
             height={25}
-            onClick={setToggled}
             className={`${isToggled ? "absolute left-[120px] top-[5px]" : "flex"}`}
           />
 
@@ -122,7 +122,7 @@ const Nav = () => {
                 <div key={item.id} className={`flex flex-col items-center`}>
                   <a href={item.slug}>
                     <p
-                      className={`text_variant mt-3 font-Azeret text-[12px] font-semibold uppercase`}
+                      className={`text_variant mt-3 font-Azeret text-[14px] font-semibold uppercase`}
                     >
                       {item.name}
                     </p>
@@ -130,12 +130,16 @@ const Nav = () => {
                 </div>
               ))}
 
-              <div className={` mt-5 relative px-2 py-1 flex items-center flex-row gap-2 rounded-[15px] border border-primary_dark dark:border-primary_light border-opacity-50 bg-white dark:bg-primary_dark bg-opacity-50 dark:bg-opacity-50 backdrop-blur `}>
+              <div
+                className={`relative mt-7 flex flex-row items-center gap-2 rounded-[15px] border border-primary_dark border-opacity-50 bg-white bg-opacity-50 px-2 py-1 backdrop-blur dark:border-primary_light dark:bg-primary_dark dark:bg-opacity-50`}
+              >
                 {LinkIcons.map((icon) => (
                   <div key={icon.id}>
                     <a href={icon.url}>
                       <Image
-                        src={theme === "light" ? icon.image.light : icon.image.dark}
+                        src={
+                          theme === "light" ? icon.image.light : icon.image.dark
+                        }
                         alt={icon.slug}
                         width={25}
                         height={25}
