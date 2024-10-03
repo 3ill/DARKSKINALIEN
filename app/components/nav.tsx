@@ -2,14 +2,26 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { navVariants, staggerContainer } from "@/app/utils/motion";
+import { navVariants, softVariant, staggerContainer } from "@/app/utils/motion";
 import Image from "next/image";
 import { useTheme } from "@/app/context/theme.context";
-import { dark_logo, light_logo, moon, sun } from "@/app/assets";
+import {
+  dark_logo,
+  light_logo,
+  menu_close_dark,
+  menu_close_light,
+  menu_open_dark,
+  menu_open_light,
+  moon,
+  sun,
+} from "@/app/assets";
 import { LinkIcons, NavItems } from "@/app/data/constants";
+import { useMobileMenuStore } from "@/app/store/store";
 
 const Nav = () => {
   const { theme, toggleTheme } = useTheme();
+  const { isToggled, setToggled } = useMobileMenuStore();
+
   return (
     <motion.section
       variants={staggerContainer(0.1, 0.1)}
@@ -18,6 +30,7 @@ const Nav = () => {
       viewport={{ once: false, amount: 0.75 }}
       className={`flex flex-col`}
     >
+      {/*DESKTOP NAV*/}
       <motion.nav
         variants={navVariants}
         className={`hidden flex-row items-center justify-between px-5 sm:flex`}
@@ -62,6 +75,86 @@ const Nav = () => {
             onClick={toggleTheme}
             className={`ml-5 transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100`}
           />
+        </div>
+      </motion.nav>
+
+      {/*MOBILE NAV*/}
+      <motion.nav
+        variants={navVariants}
+        className={`relative flex flex-row items-center py-1 sm:hidden`}
+      >
+        <Image
+          src={theme === "light" ? light_logo : dark_logo}
+          alt={`logo`}
+          width={50}
+          height={30}
+          className={`absolute top-[10px]`}
+        />
+
+        <div
+          className={`absolute top-[10px] ml-[320px] items-center rounded-[15px] bg-[#252525] dark:bg-[#252525] px-2 py-1 bg-opacity-30 dark:bg-opacity-50 backdrop-blur-md ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
+        >
+          <Image
+            src={
+              theme === "light"
+                ? isToggled
+                  ? menu_open_light
+                  : menu_close_light
+                : isToggled
+                  ? menu_open_dark
+                  : menu_close_dark
+            }
+            alt={`menu`}
+            width={25}
+            height={25}
+            onClick={setToggled}
+            className={`${isToggled ? "absolute left-[120px] top-[5px]" : "flex"}`}
+          />
+
+          {isToggled && (
+            <motion.div
+              variants={softVariant}
+              initial={`hidden`}
+              whileInView={`visible`}
+              className={`mt-[20px]`}
+            >
+              {NavItems.map((item) => (
+                <div key={item.id} className={`flex flex-col items-center`}>
+                  <a href={item.slug}>
+                    <p
+                      className={`text_variant mt-3 font-Azeret text-[12px] font-semibold uppercase`}
+                    >
+                      {item.name}
+                    </p>
+                  </a>
+                </div>
+              ))}
+
+              <div className={` mt-5 relative px-2 py-1 flex items-center flex-row gap-2 rounded-[15px] border border-primary_dark dark:border-primary_light border-opacity-50 bg-white dark:bg-primary_dark bg-opacity-50 dark:bg-opacity-50 backdrop-blur `}>
+                {LinkIcons.map((icon) => (
+                  <div key={icon.id}>
+                    <a href={icon.url}>
+                      <Image
+                        src={theme === "light" ? icon.image.light : icon.image.dark}
+                        alt={icon.slug}
+                        width={25}
+                        height={25}
+                        className={`transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100`}
+                      />
+                    </a>
+                  </div>
+                ))}
+                <Image
+                  src={theme === "light" ? sun : moon}
+                  alt={`logo`}
+                  width={25}
+                  height={25}
+                  onClick={toggleTheme}
+                  className={`transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100`}
+                />
+              </div>
+            </motion.div>
+          )}
         </div>
       </motion.nav>
     </motion.section>
