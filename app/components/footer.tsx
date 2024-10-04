@@ -30,7 +30,7 @@ const Footer = () => {
             </h3>
             <div className={`mt-5 flex flex-col`}>
               {item.children.map((child) => (
-                <div key={child.id} className={`flex flex-col gap-3`}>
+                <div key={child.id} className={`flex flex-col gap-3 mb-3`}>
                   <a href={child.url}>
                     <p
                       className={`text-secondary-100 font-helvetica text-[12px] font-light capitalize dark:text-gray-400`}
