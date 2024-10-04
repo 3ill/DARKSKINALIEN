@@ -16,9 +16,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary_dark": "#090909",
-        "primary_light" : "#EEEEEE"
-
+        primary_dark: "#090909",
+        primary_light: "#EEEEEE",
+        secondary: {
+          100: '#1E1E1E',
+          200: '#252525'
+        },
       },
       fontFamily: {
         geistMono: "var(--font-geist-mono)",
