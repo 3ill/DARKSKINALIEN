@@ -57,3 +57,74 @@ export const LinkIcons = [
     },
   },
 ] as const;
+
+export const FooterItems = [
+  {
+    id: 1,
+    name: "media",
+    children: [
+      {
+        id: 1,
+        name: "news",
+        url: "",
+      },
+      {
+        id: 2,
+        name: "videos",
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "connect",
+    children: [
+      {
+        id: 1,
+        name: "instagram",
+        url: "",
+      },
+      {
+        id: 2,
+        name: "x.com",
+        url: "",
+      },
+      {
+        id: 3,
+        name: "linkedin",
+        url: "",
+      },
+      {
+        id: 4,
+        name: "email",
+        url: "",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "partnerships",
+    children: [
+      {
+        id: 1,
+        name: "headsbybnxn",
+        url: "",
+      },
+      {
+        id: 2,
+        name: "floats",
+        url: "",
+      },
+      {
+        id: 3,
+        name: "web3 global",
+        url: "",
+      },
+      {
+        id: 4,
+        name: "young people in tech",
+        url: "",
+      },
+    ],
+  },
+] as const;
