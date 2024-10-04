@@ -19,18 +19,18 @@ const Footer = () => {
         height={50}
       />
       <section
-        className={`mt-[50px] flex flex-col sm:flex-row sm:justify-between`}
+        className={`mt-[30px] flex flex-col sm:flex-row sm:justify-between`}
       >
         {FooterItems.map((item) => (
           <div key={item.id} className={`flex flex-col text-left`}>
             <h3
-              className={`font-Azeret text-[16px] font-bold uppercase text-primary_dark dark:text-white`}
+              className={`font-Azeret text-[16px] font-bold uppercase text-primary_dark dark:text-white mt-[20px]`}
             >
               {item.name}
             </h3>
             <div className={`mt-5 flex flex-col`}>
               {item.children.map((child) => (
-                <div key={child.id} className={`flex flex-col gap-3 mb-3`}>
+                <div key={child.id} className={`flex flex-col gap-3`}>
                   <a href={child.url}>
                     <p
                       className={`text-secondary-100 font-helvetica text-[12px] font-light capitalize dark:text-gray-400`}
