@@ -28,7 +28,7 @@ const Nav = () => {
       initial={`hidden`}
       whileInView={`show`}
       viewport={{ once: false, amount: 0.75 }}
-      className={`flex flex-col`}
+      className={`flex flex-col z-50`}
     >
       {/*DESKTOP NAV*/}
       <motion.nav
