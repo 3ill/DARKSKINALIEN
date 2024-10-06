@@ -13,6 +13,8 @@ import menu_open_dark from "./icons/dark/menu_open_dark.png";
 import menu_close_light from "./icons/light/menu_close_light.png";
 import menu_open_light from "./icons/light/menu_open_light.png";
 import hero from "./images/darkskinalien_v1 1.png"
+import alien from "./images/Dsa.png"
+import dsa from "./images/dsaa.png"
 
 export {
   instagram_light,
@@ -29,5 +31,7 @@ export {
   menu_close_dark,
   menu_open_light,
   menu_close_light,
-  hero
+  hero,
+  alien,
+  dsa
 };
