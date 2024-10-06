@@ -12,14 +12,17 @@ const Footer = () => {
     <footer
       className={`bg-secondary-200 flex w-full flex-col bg-opacity-50 px-5 py-3 backdrop-blur-md`}
     >
-      <Image
-        src={theme === "light" ? light_logo : dark_logo}
-        alt={`logo`}
-        width={70}
-        height={50}
-      />
+      <div className={`flex items-center`}>
+        <Image
+          src={theme === "light" ? light_logo : dark_logo}
+          alt={`logo`}
+          width={70}
+          height={40}
+          className={`mr-2`}
+        />
+      </div>
       <section
-        className={`mt-[30px] flex flex-col sm:flex-row sm:justify-between`}
+        className={`mt-[30px] px-2 flex flex-col sm:flex-row sm:justify-between`}
       >
         {FooterItems.map((item) => (
           <div key={item.id} className={`flex flex-col text-left`}>
@@ -47,8 +50,8 @@ const Footer = () => {
       <div className={`w-full h-[0.5px] mt-7 border border-[#3f3f3f]`} />
       <div className={`flex flex-col mt-3`}>
         <div className={`flex flex-col sm:flex-row sm:justify-between`}>
-          <p className={`font-helvetica text-[12px] font-light text-secondary-100 dark:text-gray-400`}>Copyright 2024 DarkskinAlien, All Rights Reserved.</p>
-          <p className={`font-helvetica  text-[12px] font-light text-secondary-100 dark:text-gray-400`}>Designed by Dsacorp, LA</p>
+          <p className={`footer_text`}>Copyright 2024 DarkSkinAlien, All Rights Reserved.</p>
+          <p className={`footer_text`}>Designed by Dsacorp, LA</p>
         </div>
         <p className={`font-Azeret self-center sm:self-start mt-2 uppercase font-bold text-primary_dark dark:text-white text-[14px]`}>darkskinalien</p>
       </div>
