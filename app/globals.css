@@ -16,4 +16,8 @@
     .text_variant {
         @apply text-primary_dark dark:text-primary_light hover:text-black hover:dark:text-white hover:scale-110 active:scale-105 transition-all
     }
+
+    .footer_text {
+        @apply font-helvetica text-[12px] font-light text-secondary-100 dark:text-gray-400
+    }
 }
