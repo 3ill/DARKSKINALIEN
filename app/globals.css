@@ -22,7 +22,7 @@
     }
 
     .hero_sub_wrapper {
-        @apply absolute max-sm:top-[520px]  flex w-full flex-row justify-between max-sm:gap-[80px] max-md:gap-[350px] px-3 max-md:top-[700px] lg:gap-[700px] lg:px-[80px] lg:top-[500px]
+        @apply absolute max-sm:top-[600px]  flex w-full flex-row justify-between max-sm:gap-[80px] max-md:gap-[350px] px-3 max-md:top-[700px] lg:gap-[900px] lg:px-[80px] lg:top-[500px]
     }
 
     .hero_sub_text {
@@ -34,3 +34,12 @@
     }
 
 }
+
+.glow {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+}
+
+.dark-glow {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7)); /* Dark glow */
+}
+
