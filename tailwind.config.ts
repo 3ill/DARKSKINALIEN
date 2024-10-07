@@ -4,6 +4,7 @@ const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
+const twGlow = require('twglow');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -59,6 +60,7 @@ module.exports = {
         },
       );
     },
+    twGlow
   ],
 };
 
