@@ -1,11 +1,10 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { alien } from "@/app/assets";
-import NavSlider from "@/app/components/nav-slider";
 import { motion } from "framer-motion";
-import { slideIn, staggerContainer } from "@/app/utils/motion";
+import { staggerContainer } from "@/app/utils/motion";
+import Image from "next/image";
+import { alien } from "../assets";
 
 const Hero = () => {
   return (
@@ -14,57 +13,50 @@ const Hero = () => {
       initial="hidden"
       whileInView={`show`}
       viewport={{ once: false, amount: 0.75 }}
-      className={`flex h-screen w-full pt-[20px] md:pt-[70px] lg:pt-[50px]`}
+      className={`flex h-screen w-full pt-9`}
     >
-      <div className={`relative -z-50 flex w-full flex-col`}>
-        <div className={`relative -z-50 flex w-full flex-col`}>
-          <p className={`hero_text overflow-x-hidden`}>
-            darkskin
-            <span className={`max-md:hidden max-sm:hidden`}>
-              <br className={`flex sm:hidden`} />
-              alien
-            </span>
-          </p>
-          <p
-            className={`hero_text -z-50 flex self-center max-md:-mt-[100px] max-md:flex max-sm:-mt-[50px] lg:hidden`}
-          >
-            Alien
-          </p>
-        </div>
+      <section className={`flex w-full flex-col`}>
+        <div className={`flex flex-col lg:flex-row lg:justify-between`}>
+          {/**Hero Text: Left */}
+          <div className={`flex w-full flex-col`}>
+            <h1
+              className={`text_variant2 font-thunder text-[120px] uppercase tracking-wide sm:text-[170px] lg:text-[250px]`}
+            >
+              DarkSkin
+            </h1>
+            <h1
+              className={`text_variant2 -mt-[80px] font-thunder text-[120px] uppercase tracking-wide sm:-mt-[100px] sm:text-[170px] lg:-mt-[150px] lg:text-[250px]`}
+            >
+              Alien
+            </h1>
+            <div className={`glow flex flex-row gap-2`}>
+              <div
+                className={`h-full w-1 rounded-md bg-primary_dark dark:bg-primary_light`}
+              />
+              <div className={`flex flex-col sm:text-[18px] lg:text-[20px]`}>
+                <p className={`text_variant2 font-Semibold font-Azeret`}>
+                  Founder
+                </p>
+                <p className={`text_variant2 font-Semibold font-Azeret`}>
+                  Leader
+                </p>
+                <p className={`text_variant2 font-Semibold font-Azeret`}>
+                  Community Engr
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <div className={`hero_sub_wrapper overflow-x-hidden glow `}>
-          <motion.p
-            variants={slideIn("left", "tween", 0.5, 0.75)}
-            initial={`hidden`}
-            whileInView={`show`}
-            className={`hero_sub_text`}
-          >
-            Community Engr
-          </motion.p>
-          <motion.p
-            variants={slideIn("right", "tween", 0.5, 0.75)}
-            initial={`hidden`}
-            whileInView={`show`}
-            className={`hero_sub_text`}
-          >
-            Thought leader
-          </motion.p>
+          <div className={`relative flex h-full w-full flex-col`}>
+            <Image
+              src={alien}
+              alt="alien"
+              quality={100}
+              className={`absolute -right-[60px] -top-[90px] h-[450px] w-[500px] self-end object-contain object-center sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px]`}
+            />
+          </div>
         </div>
-
-        <Image
-          src={alien}
-          alt={`profile`}
-          quality={100}
-          className={`absolute -z-30 h-[500px] w-[300px] object-contain object-center max-md:left-[10px] max-md:top-[70px] max-sm:left-6 max-sm:top-[100px] sm:h-[700px] sm:w-[900px] lg:left-[300px] lg:top-0`}
-        />
-      </div>
-      <div className={`relative z-50`}>
-        <div
-          className={`absolute z-50 max-md:-left-[370px] max-md:top-[650px] max-sm:-left-[218px] max-sm:top-[570px] lg:-left-[750px] lg:top-[600px]`}
-        >
-          <NavSlider />
-        </div>
-      </div>
+      </section>
     </motion.section>
   );
 };
