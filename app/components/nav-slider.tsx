@@ -7,7 +7,7 @@ const NavSlider = () => {
     >
       <a href={`#about`}>
         <div
-          className={`flex h-5 w-5 animate-bounce self-center rounded-full bg-white duration-1000 sm:h-5 sm:w-5`}
+          className={`flex h-7 w-5 animate-bounce self-center rounded-full bg-white duration-1000 sm:h-7 sm:w-5`}
         />
       </a>
     </div>
