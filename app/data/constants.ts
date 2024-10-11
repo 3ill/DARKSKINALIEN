@@ -128,3 +128,18 @@ export const FooterItems = [
     ],
   },
 ] as const;
+
+export const HeroSubText = [
+  {
+    id: 1,
+    name: "founder",
+  },
+  {
+    id: 2,
+    name: "leader",
+  },
+  {
+    id: 3,
+    name: "community engr",
+  }
+] as const;
