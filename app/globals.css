@@ -36,6 +36,10 @@
   .hero_text {
     @apply relative -z-50 px-5 font-thunder uppercase tracking-wider text-black dark:text-white max-md:text-[200px] max-sm:text-[110px] sm:px-9 lg:text-[250px];
   }
+
+  .hero_image {
+    @apply absolute -right-[60px] -top-[90px] -z-50 h-[450px] w-[500px] self-end object-contain object-center sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px];
+  }
 }
 
 .glow {
@@ -44,4 +48,8 @@
 
 .dark-glow {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0)); /* Dark glow */
+}
+
+.purple-glow {
+  filter: drop-shadow(0 0 15px rgba(128, 0, 255, 0.7));
 }
