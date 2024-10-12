@@ -39,7 +39,7 @@ const Hero = () => {
               variants={softVariant}
               initial={`hidden`}
               whileInView={`visible`}
-              className={`${theme === "dark" ? "glow" : "dark_glow"} flex flex-row gap-2`}
+              className={`${theme === "dark" ? "glow" : "purple_glow"} flex flex-row gap-2`}
             >
               <div
                 className={`h-full w-1 rounded-md bg-primary_dark dark:bg-primary_light`}
@@ -64,18 +64,21 @@ const Hero = () => {
               src={alien}
               alt="alien"
               quality={100}
-              className={`absolute -right-[60px] -top-[90px] -z-50 h-[450px] w-[500px] self-end object-contain object-center sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px]`}
+              className={`hero_image`}
             />
           </div>
         </div>
         {/**Nav Slider */}
-        <div
-          className={`relative mt-[270px] flex w-full flex-col items-center justify-center sm:mt-[150px] lg:-mt-[30px]`}
+        <motion.div
+          variants={softVariant}
+          initial={`hidden`}
+          whileInView={`visible`}
+          className={`relative mt-[300px] flex w-full flex-col items-center justify-center sm:mt-[150px] lg:-mt-[30px]`}
         >
           <div>
             <NavSlider />
           </div>
-        </div>
+        </motion.div>
       </section>
     </motion.section>
   );
