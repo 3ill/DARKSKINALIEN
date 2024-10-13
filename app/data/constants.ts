@@ -125,6 +125,21 @@ export const FooterItems = [
         name: "young people in tech",
         url: "",
       },
+      {
+        id: 5,
+        name: "tech unwind",
+        url: "",
+      },
+      {
+        id: 6,
+        name: "nft ng",
+        url: "",
+      },
+      {
+        id: 7,
+        name: "hindsight development organization",
+        url: "",
+      }
     ],
   },
 ] as const;
