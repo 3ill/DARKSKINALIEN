@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./title";
 import Body from "./body";
+import { CarouselDemo } from "./carousel";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
       className={`flex h-screen w-full flex-col pt-0 sm:pt-[150px]`}
     >
       <Title title={`About Me`} />
-      <div className={`flex flex-col pt-9 sm:flex-row`}>
+      <div className={`flex flex-col pt-9`}>
         <Body>
           <p
             className={`body_text_variant font-helvetica text-[14px] font-light sm:text-[16px]`}
@@ -27,6 +28,8 @@ const About = () => {
             together.
           </p>
         </Body>
+
+        <CarouselDemo />
       </div>
     </section>
   );
