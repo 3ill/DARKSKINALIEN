@@ -21,6 +21,7 @@ const Body = ({ children }: Props) => {
         variants={softVariant}
         initial={`hidden`}
         whileInView={`visible`}
+        className={`max-w-[800px] text-left`}
       >
         {children}
       </motion.div>
