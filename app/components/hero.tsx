@@ -6,8 +6,8 @@ import { softVariant, staggerContainer } from "@/app/utils/motion";
 import Image from "next/image";
 import { alien } from "../assets";
 import { useTheme } from "../context/theme.context";
-import { HeroSubText } from "../data/constants";
 import NavSlider from "./nav-slider";
+import { FlipWordsDemo } from "./flip";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -41,19 +41,11 @@ const Hero = () => {
               whileInView={`visible`}
               className={`${theme === "dark" ? "glow" : "purple_glow"} flex flex-row gap-2`}
             >
-              <div
-                className={`h-full w-1 rounded-md bg-primary_dark dark:bg-primary_light`}
-              />
-              <div className={`flex flex-col`}>
-                {HeroSubText.map((item) => (
-                  <div key={item.id} className={`flex flex-col`}>
-                    <p
-                      className={`text_variant2 font-Semibold font-Azeret capitalize`}
-                    >
-                      {item.name}
-                    </p>
-                  </div>
-                ))}
+              <div className={`flex w-full flex-row pb-9`}>
+                <div
+                  className={`h-full w-1 rounded-md bg-primary_dark dark:bg-primary_light`}
+                />
+                <FlipWordsDemo />
               </div>
             </motion.div>
           </div>
