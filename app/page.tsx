@@ -3,6 +3,7 @@ import Nav from "@/app/components/nav";
 import Footer from "@/app/components/footer";
 import Hero from "@/app/components/hero";
 import About from "./components/about";
+import Projects from "./components/projects";
 
 const Page = () => {
   return (
@@ -13,6 +14,7 @@ const Page = () => {
         <Nav />
         <Hero />
         <About />
+        <Projects />
       </div>
       <Footer />
     </main>
