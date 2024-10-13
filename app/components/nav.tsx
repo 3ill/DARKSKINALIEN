@@ -28,7 +28,7 @@ const Nav = () => {
       initial={`hidden`}
       whileInView={`show`}
       viewport={{ once: false, amount: 0.75 }}
-      className={`flex flex-col z-50`}
+      className={`z-50 flex flex-col`}
     >
       {/*DESKTOP NAV*/}
       <motion.nav
@@ -92,7 +92,7 @@ const Nav = () => {
         />
 
         <div
-          className={`absolute top-[12px] right-2 items-center rounded-[15px] bg-[#252525] bg-opacity-30 px-2 py-1 backdrop-blur-md dark:bg-[#252525] dark:bg-opacity-50 ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
+          className={`absolute right-2 top-[12px] items-center rounded-[15px] bg-[#252525] bg-opacity-90 px-2 py-1 backdrop-blur-md dark:bg-[#252525] dark:bg-opacity-90 ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
           onClick={setToggled}
         >
           <Image
@@ -122,7 +122,7 @@ const Nav = () => {
                 <div key={item.id} className={`flex flex-col items-center`}>
                   <a href={item.slug}>
                     <p
-                      className={`text_variant mt-3 font-Azeret text-[14px] font-semibold uppercase`}
+                      className={`mt-3 font-helvetica text-[14px] font-semibold uppercase text-primary_light hover:text-white`}
                     >
                       {item.name}
                     </p>
