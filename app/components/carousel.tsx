@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import React from "react";
 import { Carousel, Card } from "@/app/components/ui/apple-cards-carousel";
 import { darkskinalien, roundtable, roundtable3, top_teki } from "@/app/assets";
