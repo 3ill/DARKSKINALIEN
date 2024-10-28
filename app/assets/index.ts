@@ -15,6 +15,10 @@ import menu_open_light from "./icons/light/menu_open_light.png";
 import hero from "./images/darkskinalien_v1 1.png"
 import alien from "./images/Dsa.png"
 import dsa from "./images/dsaa.png"
+import elisium1 from "./images/elisum1.jpg"
+import elisium2 from "./images/elisum2.jpg"
+import elisimu3 from "./images/elisium3.jpg"
+import darkskinalien from "./images/darkskinalien.jpg"
 
 export {
   instagram_light,
@@ -33,5 +37,9 @@ export {
   menu_close_light,
   hero,
   alien,
-  dsa
+  dsa,
+  elisium1,
+  elisium2,
+  elisimu3,
+  darkskinalien
 };
