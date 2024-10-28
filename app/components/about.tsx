@@ -15,7 +15,7 @@ const About = () => {
           <p
             className={`body_text_variant font-helvetica text-[14px] font-light sm:text-[16px]`}
           >
-            Hi, I&apos;m Martins Victor , though some know me as DarkSkinAlien I{" "}
+            Hi, I&apos;m Martins Victor , though some know me as DarkSkinAlien. I{" "}
             started DSA CORP to bring people together through learning,
             teamwork, and personal growth. My focus is on building strong
             communities and helping people understand the potential of Web3
