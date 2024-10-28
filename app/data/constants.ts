@@ -139,7 +139,7 @@ export const FooterItems = [
         id: 7,
         name: "hindsight development organization",
         url: "",
-      }
+      },
     ],
   },
 ] as const;
@@ -156,5 +156,26 @@ export const HeroSubText = [
   {
     id: 3,
     name: "community engr",
-  }
+  },
 ] as const;
+
+export const CarouselData = {
+  RoundTable3: {
+    title: "Sep 7th, 2024. The Jewel Aeida",
+    context: "A village assembly for young people seeking more",
+  },
+  RoundTable2: {
+    title: "Nov 25th, 2023. The Lekki Coliseum",
+    context:
+      "A deep conversation for entrepreneurs and creators in and beyond the tech space",
+  },
+  TopTeki: {
+    title: "Nov 30th, 2023. Tech Excellence",
+    context:
+      "Recognition for pushing the boundaries of innovation, dedication to excellence, and shaping the future of technology",
+  },
+  TechNxt: {
+    title: "Oct 4th, 2022. Landmark Towers",
+    context: "An active discussion about the future and disruptive potential of Web 3.0"
+  }
+};
