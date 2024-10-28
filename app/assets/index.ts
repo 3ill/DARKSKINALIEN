@@ -19,6 +19,9 @@ import elisium1 from "./images/elisum1.jpg"
 import elisium2 from "./images/elisum2.jpg"
 import elisimu3 from "./images/elisium3.jpg"
 import darkskinalien from "./images/darkskinalien.jpg"
+import roundtable from "./images/roundtable.jpg"
+import top_teki from "./images/top_teki(1).jpg"
+import roundtable3 from "./images/roundtable3.jpeg"
 
 export {
   instagram_light,
@@ -41,5 +44,8 @@ export {
   elisium1,
   elisium2,
   elisimu3,
-  darkskinalien
+  darkskinalien,
+  roundtable,
+  top_teki,
+  roundtable3
 };
