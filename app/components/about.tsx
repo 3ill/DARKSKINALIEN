@@ -15,17 +15,17 @@ const About = () => {
           <p
             className={`body_text_variant font-helvetica text-[14px] font-light sm:text-[16px]`}
           >
-            Hi, I&apos;m Martins Victor , though some know me as DarkSkinAlien. I{" "}
-            started DSA CORP to bring people together through learning,
-            teamwork, and personal growth. My focus is on building strong
-            communities and helping people understand the potential of Web3
-            technology , especially for creatives across Africa. <br /> <br />
-            At DSA CORP, I work on projects that encourage creativity and
-            personal development, giving people the tools to explore new ideas
-            and grow beyond what they thought possible. My goal is
-            straightforward: to open doors for future thinkers, offer support to
-            creative minds, and inspire people to achieve their best in a
-            connected, digital world .
+            I’m an African creative dedicated to reshaping narratives for
+            African innovators through the potential of Web3. Starting without a
+            clear path, I built a career in community building and management,
+            reaching a pivotal milestone that affirmed my belief in Web3&apos;s
+            capacity to amplify African voices globally. <br/> <br/> Currently, I’m
+            developing <span className={`text-gray-200`}>DSA CORP—a network focused on supporting Web3 integration
+            for African creatives.</span> At DSA CORP, we view community as the driving
+            force of the Web3 movement, enabling essential collaborations for a
+            decentralized future. <br/> <br/> My mission is to inspire and empower African
+            creatives to reach their full potential, leaving a lasting impact on
+            the industry and the next generation.
           </p>
         </Body>
 
