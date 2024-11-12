@@ -99,8 +99,8 @@ const Nav = () => {
             src={
               theme === "light"
                 ? isToggled
-                  ? menu_open_light
-                  : menu_close_light
+                  ? menu_open_dark
+                  : menu_close_dark
                 : isToggled
                   ? menu_open_dark
                   : menu_close_dark
