@@ -10,7 +10,7 @@ const Page = () => {
     <main
       className={`flex h-full w-full flex-col overflow-x-hidden overflow-y-hidden`}
     >
-      <div className={`w-full overflow-x-hidden overflow-y-hidden px-3`}>
+      <div className={`w-full overflow-x-hidden overflow-y-hidden px-3 min-h-screen`}>
         <Nav />
         <Hero />
         <About />
