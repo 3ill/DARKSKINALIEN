@@ -19,11 +19,15 @@ const About = () => {
             African innovators through the potential of Web3. Starting without a
             clear path, I built a career in community building and management,
             reaching a pivotal milestone that affirmed my belief in Web3&apos;s
-            capacity to amplify African voices globally. <br/> <br/> Currently, I’m
-            developing <span className={`text-gray-200`}>DSA CORP—a network focused on supporting Web3 integration
-            for African creatives.</span> At DSA CORP, we view community as the driving
-            force of the Web3 movement, enabling essential collaborations for a
-            decentralized future. <br/> <br/> My mission is to inspire and empower African
+            capacity to amplify African voices globally. <br /> <br />{" "}
+            Currently, I’m developing{" "}
+            <span className={`text-black dark:text-gray-200`}>
+              DSA CORP—a network focused on supporting Web3 integration for
+              African creatives.
+            </span>{" "}
+            At DSA CORP, we view community as the driving force of the Web3
+            movement, enabling essential collaborations for a decentralized
+            future. <br /> <br /> My mission is to inspire and empower African
             creatives to reach their full potential, leaving a lasting impact on
             the industry and the next generation.
           </p>
