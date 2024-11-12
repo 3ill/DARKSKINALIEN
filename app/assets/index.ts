@@ -22,6 +22,7 @@ import darkskinalien from "./images/darkskinalien.jpg"
 import roundtable from "./images/roundtable.jpg"
 import top_teki from "./images/top_teki(1).jpg"
 import roundtable3 from "./images/roundtable3.jpeg"
+import hbb from "./images/hbb.jpeg"
 
 export {
   instagram_light,
@@ -47,5 +48,6 @@ export {
   darkskinalien,
   roundtable,
   top_teki,
-  roundtable3
+  roundtable3,
+  hbb
 };
