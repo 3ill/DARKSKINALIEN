@@ -9,9 +9,7 @@ import {
   dark_logo,
   light_logo,
   menu_close_dark,
-  menu_close_light,
   menu_open_dark,
-  menu_open_light,
   moon,
   sun,
 } from "@/app/assets";
