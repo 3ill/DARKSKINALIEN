@@ -13,7 +13,7 @@ const About = () => {
       <div className={`flex flex-col pt-9`}>
         <Body>
           <p
-            className={`body_text_variant font-helvetica text-[14px] font-light sm:text-[16px]`}
+            className={`body_text_variant font-grotesk text-[14px] font-light sm:text-[16px]`}
           >
             I’m an African creative dedicated to reshaping narratives for
             African innovators through the potential of Web3. Starting without a
