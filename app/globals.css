@@ -47,7 +47,7 @@
   }
 
   .hero_image {
-    @apply absolute -right-[60px] -top-[90px] -z-50 h-[450px] w-[500px] self-end object-contain object-center sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px];
+    @apply absolute -right-[60px] -top-[90px] -z-50 h-[450px] w-[500px] self-end object-contain object-center sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px] motion-preset-expand motion-duration-700;
   }
 }
 
