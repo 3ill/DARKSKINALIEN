@@ -23,6 +23,7 @@ const Hero = () => {
         <div className={`flex flex-col lg:flex-row lg:justify-between`}>
           {/**Hero Text: Left */}
           <div className={`flex w-full flex-col`}>
+            <div className={`flex flex-col w-full motion-preset-expand motion-duration-2000`}>
             <h1
               className={`text_variant2 font-thunder text-[120px] uppercase tracking-wide sm:text-[170px] lg:text-[250px]`}
             >
@@ -33,6 +34,8 @@ const Hero = () => {
             >
               Alien
             </h1>
+
+            </div>
 
             {/**Hero SubText */}
             <motion.div
