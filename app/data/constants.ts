@@ -1,11 +1,12 @@
 import {
+  floats,
   hbb,
   instagram_dark,
   instagram_light,
   linkedin_dark,
   linkedin_light,
   twitter_dark,
-  twitter_light
+  twitter_light, uhuru
 } from "@/app/assets";
 
 export const NavItems = [
@@ -188,5 +189,20 @@ export const ProjectsData = [
     name: "heads by bnxn",
     role: "community engr",
     image: hbb
+  },
+  {
+    id: 2,
+    duration: "Nov 22 - Oct 23",
+    name: "uhuruNFT",
+    role: "community engr",
+    image: uhuru
+  },
+  {
+    id: 3,
+    duration: "Feb 23 - Jun 23",
+    name: "floats",
+    role: "community moderator",
+    image: floats
+
   }
 ] as const
