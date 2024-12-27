@@ -23,6 +23,8 @@ import roundtable from "./images/roundtable.jpg"
 import top_teki from "./images/top_teki(1).jpg"
 import roundtable3 from "./images/roundtable3.jpeg"
 import hbb from "./images/hbb.jpeg"
+import uhuru from "./images/uhuru.jpg"
+import floats from "./images/floats.png"
 
 export {
   instagram_light,
@@ -49,5 +51,7 @@ export {
   roundtable,
   top_teki,
   roundtable3,
-  hbb
+  hbb,
+  uhuru,
+  floats
 };
