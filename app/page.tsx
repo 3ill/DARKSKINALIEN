@@ -1,9 +1,10 @@
 import React from "react";
 import Nav from "@/app/components/nav";
 import Footer from "@/app/components/footer";
-import Hero from "@/app/components/hero";
-import About from "./components/about";
-import Projects from "./components/projects";
+import Hero from "@/app/sections/hero";
+import About from "./sections/about";
+import Projects from "./sections/projects";
+import Services from "@/app/sections/services";
 
 const Page = () => {
   return (
@@ -17,6 +18,7 @@ const Page = () => {
         <Hero />
         <About />
         <Projects />
+        <Services />
       </div>
       <Footer />
     </main>

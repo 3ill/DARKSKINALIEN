@@ -31,7 +31,7 @@ const ProjectCarousel = () => {
       >
         <div className={`w-full flex-col`}>
           <ProjectsCard
-            key={dataIndex}
+            index={dataIndex}
             id={ProjectsData[dataIndex].id}
             duration={ProjectsData[dataIndex].duration}
             name={ProjectsData[dataIndex].name}

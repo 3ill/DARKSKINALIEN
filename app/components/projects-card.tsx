@@ -8,7 +8,7 @@ import { useTheme } from "@/app/context/theme.context";
 import Link from 'next/link';
 
 interface ProjectProps {
-  key: number;
+  index: number;
   id: number;
   duration: string;
   name: string;
@@ -16,7 +16,7 @@ interface ProjectProps {
   image: StaticImageData;
 }
 
-export function ProjectsCard({id, key, duration, name, role, image}: ProjectProps) {
+export function ProjectsCard({id, index, duration, name, role, image}: ProjectProps) {
   const { theme } = useTheme();
   return (
     <CardContainer className="inter-var">
@@ -29,7 +29,7 @@ export function ProjectsCard({id, key, duration, name, role, image}: ProjectProp
         </CardItem>
         <CardItem translateZ="100" className="mt-4 w-full">
           <Image
-            key={key}
+            key={index}
             src={image}
             height="1000"
             width="1000"

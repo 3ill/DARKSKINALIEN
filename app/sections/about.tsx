@@ -1,13 +1,13 @@
 import React from "react";
-import Title from "./title";
-import Body from "./body";
-import { CarouselDemo } from "./carousel";
+import Title from "../components/title";
+import Body from "../components/body";
+import { CarouselDemo } from "../components/carousel";
 
 const About = () => {
   return (
     <section
       id="about"
-      className={`flex h-screen w-full flex-col pt-0 sm:pt-[150px]`}
+      className={`flex h-screen w-full flex-col pt-[150px] sm:pt-[150px]`}
     >
       <Title title={`About Me`} />
       <div className={`flex flex-col pt-9`}>

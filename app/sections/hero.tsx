@@ -6,8 +6,8 @@ import { softVariant, staggerContainer } from "@/app/utils/motion";
 import Image from "next/image";
 import { alien } from "../assets";
 import { useTheme } from "../context/theme.context";
-import NavSlider from "./nav-slider";
-import { FlipWordsDemo } from "./flip";
+import NavSlider from "../components/nav-slider";
+import { FlipWordsDemo } from "../components/flip";
 
 const Hero = () => {
   const { theme } = useTheme();
