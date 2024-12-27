@@ -30,6 +30,7 @@ module.exports = {
         helvetica: "var(--font-helvetica)",
         thunder: "var(--font-thunder)",
         Azeret: ["Azeret Mono", "Monospace"],
+        grotesk: ["Space Grotesk", "sans-serif"],
       },
     },
   },
