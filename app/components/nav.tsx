@@ -43,7 +43,7 @@ const Nav = () => {
         <div className={`flex flex-row items-center gap-5`}>
           {NavItems.map((item) => (
             <div key={item.id} className={`group flex flex-col items-center`}>
-              <a href={item.slug}>
+              <a href={item.slug} className={`scroll-smooth`}>
                 <p className={`nav_item_text`}>{item.name}</p>
               </a>
               <div className={`nav_hover_effect`} />
@@ -58,9 +58,8 @@ const Nav = () => {
                 <Image
                   src={theme === "light" ? icon.image.light : icon.image.dark}
                   alt={icon.slug}
-                  width={25}
-                  height={25}
-                  className={`transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100`}
+
+                  className={`nav_icons`}
                 />
               </a>
             </div>
@@ -71,7 +70,7 @@ const Nav = () => {
             width={30}
             height={30}
             onClick={toggleTheme}
-            className={`ml-5 transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100`}
+            className={`nav_icons`}
           />
         </div>
       </motion.nav>
@@ -118,7 +117,7 @@ const Nav = () => {
             >
               {NavItems.map((item) => (
                 <div key={item.id} className={`flex flex-col items-center`}>
-                  <a href={item.slug}>
+                  <a href={item.slug} className={`scroll-smooth`}>
                     <p
                       className={`mt-3 font-helvetica text-[14px] font-semibold uppercase text-primary_light hover:text-white`}
                     >
@@ -139,9 +138,7 @@ const Nav = () => {
                           theme === "light" ? icon.image.light : icon.image.dark
                         }
                         alt={icon.slug}
-                        width={25}
-                        height={25}
-                        className={`transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100`}
+                        className={`nav_icons`}
                       />
                     </a>
                   </div>
@@ -149,10 +146,9 @@ const Nav = () => {
                 <Image
                   src={theme === "light" ? sun : moon}
                   alt={`logo`}
-                  width={25}
-                  height={25}
+
                   onClick={toggleTheme}
-                  className={`transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100`}
+                  className={`nav_icons`}
                 />
               </div>
             </motion.div>
