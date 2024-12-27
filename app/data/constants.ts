@@ -1,10 +1,11 @@
 import {
+  hbb,
   instagram_dark,
   instagram_light,
   linkedin_dark,
   linkedin_light,
   twitter_dark,
-  twitter_light,
+  twitter_light
 } from "@/app/assets";
 
 export const NavItems = [
@@ -179,3 +180,13 @@ export const CarouselData = {
     context: "An active discussion about the future and disruptive potential of Web 3.0"
   }
 };
+
+export const ProjectsData = [
+  {
+    id: 1,
+    duration: "Nov 23 - Dec 24",
+    name: "heads by bnxn",
+    role: "community engr",
+    image: hbb
+  }
+] as const
