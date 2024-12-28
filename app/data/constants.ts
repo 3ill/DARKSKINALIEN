@@ -193,14 +193,14 @@ export const ProjectsData = [
   {
     id: 2,
     duration: "Nov 22 - Oct 23",
-    name: "uhuruNFT",
+    name: "uhuru NFT",
     role: "community engr",
     image: uhuru
   },
   {
     id: 3,
     duration: "Feb 23 - Jun 23",
-    name: "floats",
+    name: "after hours",
     role: "community moderator",
     image: floats
 

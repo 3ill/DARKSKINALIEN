@@ -106,3 +106,15 @@ export const softVariant = {
     },
   },
 };
+
+export const softVariant2 = (duration: number, delay: number) => ({
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: duration,
+      ease: "easeInOut",
+      delay: delay
+    },
+  },
+})

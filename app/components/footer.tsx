@@ -36,7 +36,7 @@ const Footer = () => {
                 <div key={child.id} className={`flex flex-col gap-3`}>
                   <a href={child.url}>
                     <p
-                      className={`text-secondary-100 font-helvetica text-[12px] font-light capitalize dark:text-gray-400`}
+                      className={`text-secondary-100 font-grotesk text-[12px] font-light capitalize dark:text-gray-400`}
                     >
                       {child.name}
                     </p>

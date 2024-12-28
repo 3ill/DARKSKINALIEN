@@ -31,7 +31,7 @@
   }
 
   .footer_text {
-    @apply font-helvetica text-[12px] font-light text-secondary-100 dark:text-gray-400;
+    @apply font-grotesk text-[12px] font-light text-secondary-100 dark:text-gray-400;
   }
 
   .hero_sub_wrapper {
@@ -48,6 +48,14 @@
 
   .hero_image {
     @apply absolute -right-[60px] -top-[90px] -z-50 h-[450px] w-[500px] self-end object-contain object-center sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px] motion-preset-expand motion-duration-700;
+  }
+
+  .services_title {
+    @apply font-helvetica text-[52px] font-extrabold uppercase leading-[46px] sm:leading-[57px] lg:leading-[71px] text-primary_dark dark:text-primary_light sm:text-[72px] lg:text-[92px]
+  }
+
+  .services_container {
+    @apply flex w-full flex-col px-2 pt-5 lg:flex-row lg:justify-between
   }
 }
 

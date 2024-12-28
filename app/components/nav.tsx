@@ -89,7 +89,7 @@ const Nav = () => {
         />
 
         <div
-          className={`absolute right-2 top-[12px] items-center rounded-[15px] bg-[#252525] bg-opacity-90 px-2 py-1 backdrop-blur-md dark:bg-[#252525] dark:bg-opacity-90 ${isToggled ? "right-[10px] w-[150px] transition-all duration-1000" : "w-[fit-content]"}`}
+          className={`absolute z-20 right-2 top-[12px] items-center rounded-[15px] bg-[#252525] bg-opacity-90 px-2 py-1 backdrop-blur-md dark:bg-[#252525] dark:bg-opacity-90 ${isToggled ? " w-[150px] transition-all  motion-translate-x-in-[10px] motion-preset-expand motion-duration-500" : "w-[fit-content]"}`}
           onClick={setToggled}
         >
           <Image
