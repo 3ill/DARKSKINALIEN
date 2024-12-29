@@ -5,8 +5,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/app/hooks/use-outside-click";
 import { slideIn } from "@/app/utils/motion";
 
-export function ServiceCard() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+export function PublicSpeakingServiceCard() {
+  const [active, setActive] = useState<(typeof PublicSpeakingCards)[number] | boolean | null>(
     null,
   );
   const ref = useRef<HTMLDivElement>(null);
@@ -127,7 +127,7 @@ export function ServiceCard() {
         ) : null}
       </AnimatePresence>
       <ul className="mx-auto w-full max-w-2xl gap-8">
-        {cards.map((card, index) => (
+        {PublicSpeakingCards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             variants={slideIn("down", "tween", 0.1 * index, 0.75)}
@@ -199,7 +199,7 @@ export const CloseIcon = () => {
   );
 };
 
-const cards = [
+const PublicSpeakingCards = [
   {
     description: "Limitless Party",
     title: "Event Host",
