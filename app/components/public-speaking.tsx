@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { softVariant2 } from "@/app/utils/motion";
 import { ServiceCard } from "@/app/components/service-card";
+import { PublicSpeakingCards } from "@/app/components/services-data";
 
 const PublicSpeaking = () => {
   return (
@@ -22,7 +23,7 @@ const PublicSpeaking = () => {
       <div
         className={`flex flex-col items-center justify-center lg:justify-normal w-full`}
       >
-        <ServiceCard />
+        <ServiceCard data={PublicSpeakingCards} />
       </div>
     </div>
   );
