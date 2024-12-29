@@ -158,7 +158,7 @@ export function ServiceCard({data}: IServiceCard) {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="mt-4 rounded-full glow bg-[#090909] px-4 py-2 font-helvetica text-sm font-bold uppercase text-neutral-100 hover:bg-green-500 hover:text-white md:mt-0"
+              className="mt-4 rounded-full  bg-[#090909] px-4 py-2 font-helvetica text-sm font-bold uppercase text-neutral-100 hover:bg-green-500 hover:text-white md:mt-0"
             >
               {card.ctaText}
             </motion.button>
