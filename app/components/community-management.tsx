@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { softVariant2 } from "@/app/utils/motion";
 import { ServiceCard } from "@/app/components/service-card";
-import { PublicSpeakingCards } from "@/app/components/services-data";
+import { CommunityManagementCard } from "@/app/components/services-data";
 
 const CommunityManagement = () => {
   return (
@@ -21,7 +21,7 @@ const CommunityManagement = () => {
       <div
         className={`flex flex-col items-center justify-center lg:justify-normal w-full`}
       >
-        <ServiceCard data={PublicSpeakingCards} />
+        <ServiceCard data={CommunityManagementCard} />
       </div>
     </section>
   );
