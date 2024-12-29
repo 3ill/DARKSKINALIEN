@@ -57,6 +57,10 @@
   .services_container {
     @apply flex w-full flex-col px-2 pt-5 lg:flex-row lg:justify-between
   }
+
+  .service_card_link_container {
+    @apply mt-[15px] flex cursor-pointer flex-row items-center justify-between rounded-[25px] bg-[#313131] bg-opacity-30 p-4 shadow hover:bg-neutral-50 dark:hover:bg-neutral-800 md:flex-row
+  }
 }
 
 .glow {
