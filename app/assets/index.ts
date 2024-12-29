@@ -25,6 +25,7 @@ import roundtable3 from "./images/roundtable3.jpeg"
 import hbb from "./images/hbb.jpeg"
 import uhuru from "./images/uhuru.jpg"
 import floats from "./images/floats.png"
+import limitless_party from "./images/limitless_party.jpeg"
 
 export {
   instagram_light,
@@ -53,5 +54,6 @@ export {
   roundtable3,
   hbb,
   uhuru,
-  floats
+  floats,
+  limitless_party
 };
