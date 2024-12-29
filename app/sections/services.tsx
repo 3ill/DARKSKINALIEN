@@ -7,6 +7,7 @@ import {
 } from "@/app/utils/motion";
 import PublicSpeaking from "@/app/components/public-speaking";
 import CommunityManagement from "@/app/components/community-management";
+import ProjectManagement from "@/app/components/project-management";
 
 const Services = () => {
   return (
@@ -14,7 +15,7 @@ const Services = () => {
       variants={staggerContainer(0.1, 0.1)}
       initial={`hidden`}
       whileInView={`show`}
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       id={`services`}
       className={`flex min-h-screen mb-[100px] w-full flex-col pt-[450px] lg:pt-[800px]`}
     >
@@ -35,6 +36,7 @@ const Services = () => {
       </motion.div>
       <PublicSpeaking />
       <CommunityManagement />
+      <ProjectManagement />
     </motion.section>
   );
 };
