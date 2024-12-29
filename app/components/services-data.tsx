@@ -1,10 +1,11 @@
 import React from "react";
+import { limitless_party } from "@/app/assets";
 
 export const PublicSpeakingCards = [
   {
     description: "Limitless Party",
     title: "Event Host",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    src: limitless_party,
     ctaText: "explore",
     ctaText2: "book",
     ctaLink: "/",
@@ -108,6 +109,32 @@ export const CommunityManagementCard = [
     ctaText: "explore",
     ctaText2: "book",
     ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Metallica, an iconic American heavy metal band, is renowned for their
+          powerful sound and intense performances that resonate deeply with
+          their audience. Formed in Los Angeles, California, they have become a
+          cultural icon in the heavy metal music industry. <br /> <br /> Their
+          songs often reflect themes of aggression, social issues, and personal
+          struggles, capturing the essence of the heavy metal genre. With a
+          career spanning over four decades, Metallica has released numerous hit
+          albums and singles that have garnered them a massive fan following
+          both in the United States and abroad.
+        </p>
+      );
+    },
+  }
+]
+
+export const ProjectManagementCard = [
+  {
+    description: "Building The Future",
+    title: "Campaign",
+    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    ctaText: "explore",
+    ctaText2: "book",
+    ctaLink: "/",
     content: () => {
       return (
         <p>
