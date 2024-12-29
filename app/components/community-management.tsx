@@ -6,7 +6,7 @@ import { PublicSpeakingCards } from "@/app/components/services-data";
 
 const CommunityManagement = () => {
   return (
-    <section className={`services_container !pt-[150px]`}>
+    <section className={`services_container !pt-[200px] !lg:pt-[150px]`}>
       <div className={`flex w-full`}>
       <motion.h3
         variants={softVariant2(0.75, 0.5)}
