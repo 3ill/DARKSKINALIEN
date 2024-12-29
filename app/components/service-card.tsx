@@ -136,7 +136,7 @@ export function ServiceCard({data}: IServiceCard) {
             whileInView={`show`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="mt-[15px] flex cursor-pointer flex-row items-center justify-between rounded-[25px] bg-[#313131] bg-opacity-30 p-4 shadow hover:bg-neutral-50 dark:hover:bg-neutral-800 md:flex-row transition-all"
+            className="mt-[15px] flex cursor-pointer flex-row items-center justify-between rounded-[25px] bg-[#313131] bg-opacity-30 p-4 shadow hover:bg-neutral-50 dark:hover:bg-neutral-800 md:flex-row "
           >
             <div className="flex flex-col gap-4 md:flex-row">
               <div className="">
