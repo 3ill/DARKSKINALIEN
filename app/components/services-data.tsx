@@ -7,7 +7,7 @@ export const PublicSpeakingCards = [
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
     ctaText: "explore",
     ctaText2: "book",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "/",
     content: () => {
       return (
         <p>
