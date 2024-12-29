@@ -76,6 +76,7 @@ export function ServiceCard({data}: IServiceCard) {
                 <Image
                   priority
                   width={200}
+                  quality={100}
                   height={200}
                   src={active.src}
                   alt={active.title}
