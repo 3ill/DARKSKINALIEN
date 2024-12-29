@@ -88,13 +88,13 @@ export function ServiceCard({data}: IServiceCard) {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-bold text-neutral-700 dark:text-neutral-200"
+                      className="font-bold font-helvetica text-[24px] text-neutral-700 dark:text-neutral-200"
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
+                      className="text-neutral-600 font-normal font-grotesk dark:text-neutral-400"
                     >
                       {active.description}
                     </motion.p>
@@ -104,7 +104,7 @@ export function ServiceCard({data}: IServiceCard) {
                     layoutId={`button-${active.title}-${id}`}
                     href={active.ctaLink}
                     target="_blank"
-                    className="rounded-full bg-green-500 px-4 py-3 text-sm font-bold text-white"
+                    className="rounded-full font-helvetica uppercase bg-green-500 px-4 py-3 text-sm font-bold text-white"
                   >
                     {active.ctaText2}
                   </motion.a>
@@ -115,7 +115,7 @@ export function ServiceCard({data}: IServiceCard) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="flex h-40 flex-col items-start gap-4 overflow-auto pb-10 text-xs text-neutral-600 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] dark:text-neutral-400 md:h-fit md:text-sm lg:text-base"
+                    className="flex h-40 flex-col items-start gap-4 overflow-auto font-light font-grotesk pb-10 text-xs text-neutral-600 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] dark:text-neutral-400 md:h-fit md:text-sm lg:text-base"
                   >
                     {typeof active.content === "function"
                       ? active.content()
