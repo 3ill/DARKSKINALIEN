@@ -6,7 +6,7 @@ import {
   linkedin_dark,
   linkedin_light,
   twitter_dark,
-  twitter_light, uhuru, ypit
+  twitter_light, uhuru, web3_global, ypit
 } from "@/app/assets";
 
 export const NavItems = [
@@ -211,5 +211,12 @@ export const ProjectsData = [
     name: "ypit",
     role: "community partner",
     image: ypit
+  },
+  {
+    id: 5,
+    duration: "Oct 6 - Nov 1",
+    name: "Web3 Global",
+    role: "community partner",
+    image: web3_global
   }
 ] as const
