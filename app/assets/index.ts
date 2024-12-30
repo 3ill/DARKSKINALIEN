@@ -22,11 +22,13 @@ import darkskinalien from "./images/darkskinalien.jpg"
 import roundtable from "./images/roundtable.jpg"
 import top_teki from "./images/top_teki(1).jpg"
 import roundtable3 from "./images/roundtable3.jpeg"
-import hbb from "./images/hbb.jpeg"
-import uhuru from "./images/uhuru.jpg"
-import floats from "./images/floats.png"
+import hbb from "./images/brands/hbb.jpeg"
+import uhuru from "./images/brands/uhuru.jpg"
+import floats from "./images/brands/floats.png"
 import limitless_party from "./images/limitless_party.jpeg"
-import ypit from "./images/ypit.jpg"
+import ypit from "./images/brands/ypit.jpg"
+import ypit_mindset from "./images/brands/ypit_mindset.jpg"
+import metaverse_conf from "./images/metaverse_conf.jpg"
 
 export {
   instagram_light,
@@ -57,5 +59,7 @@ export {
   uhuru,
   floats,
   limitless_party,
-  ypit
+  ypit,
+  ypit_mindset,
+  metaverse_conf
 };
