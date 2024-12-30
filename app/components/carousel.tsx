@@ -25,7 +25,7 @@ interface ContentProps {
 const DummyContent = ({ title, context }: ContentProps) => {
   return (
     <>
-      <div className="glow mb-4 rounded-3xl bg-[#F5F5F7] p-8 dark:bg-neutral-800 md:p-14">
+      <div className="mb-4 rounded-3xl bg-[#F5F5F7] p-8 dark:bg-neutral-800 md:p-14 bg-opacity-85 backdrop-blur-md">
         <p className="mx-auto max-w-3xl font-grotesk text-base capitalize text-neutral-600 dark:text-neutral-400 md:text-2xl">
           <span className="font-helvetica font-bold uppercase text-neutral-700 dark:text-neutral-200">
             {title}
