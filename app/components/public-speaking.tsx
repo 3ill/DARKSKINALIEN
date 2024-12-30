@@ -17,8 +17,8 @@ const PublicSpeaking = () => {
           className={`flex w-full items-center gap-1`}
         >
           <div
-            className={`h-[100p] sm:h-[200px] w-1 rounded-md bg-gradient-to-r from-blue-400 to-blue-600`}
-          />
+            className={`h-[150px] w-1 rounded-md bg-gradient-to-r from-blue-400 to-blue-600 sm:h-[200px]`}
+          ></div>
 
           <h3 className={`services_title`}>
             Public <br /> Speaking

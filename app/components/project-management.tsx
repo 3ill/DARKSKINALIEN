@@ -17,8 +17,10 @@ const ProjectManagement = () => {
           className={`flex w-full items-center gap-1`}
         >
           <div
-            className={`h-[200px] w-1 rounded-md bg-gradient-to-r from-green-400 to-green-600`}
-          />
+            className={`h-[150px] sm:h-[200px] w-1 rounded-md bg-gradient-to-r from-green-400 to-green-600 block`}
+          >
+            &nbsp;
+          </div>
 
           <h3 className={`services_title`}>
             Project <br /> Management

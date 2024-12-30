@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { softVariant2 } from "@/app/utils/motion";
 import { ServiceCard } from "@/app/components/service-card";
 import { CommunityManagementData } from "@/app/components/services-data";
+import { cn } from "@/app/lib/utils";
 
 const CommunityManagement = () => {
   return (
@@ -14,12 +15,15 @@ const CommunityManagement = () => {
           whileInView={`visible`}
           className={`flex w-full items-center gap-1`}
         >
+          <div
+            className={cn('h-[150px] w-1 rounded-md !bg-gradient-to-r from-yellow-400 to-yellow-600 sm:h-[200px] block')}
+          >
+            &nbsp;
+          </div>
 
-          <div className={`w-1 h-[100px] sm:h-[200px] rounded-md bg-gradient-to-r from-yellow-400 to-yellow-600`}/>
-
-          <motion.h3 className={`services_title`}>
+          <h3 className={`services_title`}>
             Community <br /> Management
-          </motion.h3>
+          </h3>
         </motion.div>
       </div>
       <div className={`service_component_wrapper`}>
