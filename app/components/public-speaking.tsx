@@ -10,14 +10,20 @@ const PublicSpeaking = () => {
   return (
     <div className={`services_container`}>
       <div className={`flex w-full`}>
-        <motion.h3
+        <motion.div
           variants={softVariant2(0.75, 0.5)}
           initial={`hidden`}
           whileInView={`visible`}
-          className={`services_title`}
+          className={`flex w-full items-center gap-1`}
         >
-          Public <br /> Speaking
-        </motion.h3>
+          <div
+            className={`h-[100p] sm:h-[200px] w-1 rounded-md bg-gradient-to-r from-blue-400 to-blue-600`}
+          />
+
+          <h3 className={`services_title`}>
+            Public <br /> Speaking
+          </h3>
+        </motion.div>
       </div>
       <div className={`service_component_wrapper`}>
         <ServiceCard data={PublicSpeakingData} />
@@ -25,5 +31,4 @@ const PublicSpeaking = () => {
     </div>
   );
 };
-
 export default PublicSpeaking;
