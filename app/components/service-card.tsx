@@ -5,8 +5,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/app/hooks/use-outside-click";
 import { slideIn } from "@/app/utils/motion";
 import { IServiceCard } from "@/app/store/interface/store.interface";
+import { BackgroundGradient } from "@/app/components/background-gradient";
 
-export function ServiceCard({data}: IServiceCard) {
+export function ServiceCard({ data }: IServiceCard) {
   const [active, setActive] = useState<(typeof data)[number] | boolean | null>(
     null,
   );
@@ -91,26 +92,28 @@ export function ServiceCard({data}: IServiceCard) {
                   <div className="">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-bold font-helvetica text-[24px] text-neutral-700 dark:text-neutral-200"
+                      className="font-helvetica text-[24px] font-bold text-neutral-700 dark:text-neutral-200"
                     >
                       {active.title}
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 font-normal font-grotesk dark:text-neutral-400"
+                      className="font-grotesk font-normal text-neutral-600 dark:text-neutral-400"
                     >
                       {active.description}
                     </motion.p>
                   </div>
 
-                  <motion.a
-                    layoutId={`button-${active.title}-${id}`}
-                    href={active.ctaLink}
-                    target="_blank"
-                    className="rounded-full font-helvetica uppercase bg-green-500 px-4 py-3 text-sm font-bold text-white"
-                  >
-                    {active.ctaText2}
-                  </motion.a>
+                  <BackgroundGradient>
+                    <motion.a
+                      layoutId={`button-${active.title}-${id}`}
+                      href={active.ctaLink}
+                      target="_blank"
+                      className="rounded-full bg-neutral-50 bg-opacity-35 backdrop-blur-md px-4 py-3 font-helvetica text-sm font-bold uppercase text-white"
+                    >
+                      {active.ctaText2}
+                    </motion.a>
+                  </BackgroundGradient>
                 </div>
                 <div className="relative px-4 pt-4">
                   <motion.div
@@ -118,7 +121,7 @@ export function ServiceCard({data}: IServiceCard) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="flex h-40 flex-col items-start gap-4 overflow-auto font-light font-grotesk pb-10 text-xs text-neutral-600 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] dark:text-neutral-400 md:h-fit md:text-sm lg:text-base"
+                    className="flex h-40 flex-col items-start gap-4 overflow-auto pb-10 font-grotesk text-xs font-light text-neutral-600 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] dark:text-neutral-400 md:h-fit md:text-sm lg:text-base"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -159,12 +162,14 @@ export function ServiceCard({data}: IServiceCard) {
                 </motion.p>
               </div>
             </div>
-            <motion.button
-              layoutId={`button-${card.title}-${id}`}
-              className="mt-4 rounded-full  bg-[#090909] px-4 py-2 font-helvetica text-sm font-bold uppercase text-neutral-100 hover:bg-green-500 hover:text-white md:mt-0"
-            >
-              {card.ctaText}
-            </motion.button>
+            <BackgroundGradient className={`flex items-center px-4 py-2 rounded-full`}>
+              <motion.button
+                layoutId={`button-${card.title}-${id}`}
+                className="font-helvetica text-sm font-extrabold uppercase text-neutral-100  hover:text-white"
+              >
+                {card.ctaText}
+              </motion.button>
+            </BackgroundGradient>
           </motion.div>
         ))}
       </ul>
