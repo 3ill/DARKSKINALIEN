@@ -32,6 +32,7 @@ import metaverse_conf from "./images/metaverse_conf.jpg"
 import dsa_bnxn from "./images/dsaxbnxn.jpeg"
 import paal from "./images/brands/paal.jpg"
 import btf from "./images/btf.jpeg"
+import web3_global from "./images/brands/web3_global.jpg"
 
 export {
   instagram_light,
@@ -67,5 +68,6 @@ export {
   metaverse_conf,
   dsa_bnxn,
   paal,
-  btf
+  btf,
+  web3_global
 };
