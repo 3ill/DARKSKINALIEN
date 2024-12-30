@@ -1,7 +1,7 @@
 import React from "react";
 import { limitless_party } from "@/app/assets";
 
-export const PublicSpeakingCards = [
+export const PublicSpeakingData = [
   {
     description: "Limitless Party",
     title: "Event Host",
@@ -76,8 +76,7 @@ export const PublicSpeakingCards = [
 
 ];
 
-
-export const CommunityManagementCard = [
+export const CommunityManagementData = [
   {
     description: "HeadsByBnxn",
     title: "Web3 Communities",
@@ -127,7 +126,7 @@ export const CommunityManagementCard = [
   }
 ]
 
-export const ProjectManagementCard = [
+export const ProjectManagementData = [
   {
     description: "Building The Future",
     title: "Campaign",
