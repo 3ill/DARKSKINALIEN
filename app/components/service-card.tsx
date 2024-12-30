@@ -44,6 +44,8 @@ export function ServiceCard({data}: IServiceCard) {
           />
         )}
       </AnimatePresence>
+
+      {/*Expanded Card*/}
       <AnimatePresence>
         {active && typeof active === "object" ? (
           <div className="fixed inset-0 z-[100] grid place-items-center">
@@ -129,7 +131,7 @@ export function ServiceCard({data}: IServiceCard) {
         ) : null}
       </AnimatePresence>
 
-      {/*Acutual Card*/}
+      {/*Not Expanded Card*/}
       <ul className="mx-auto w-full max-w-2xl gap-8">
         {data.map((card, index) => (
           <motion.div
