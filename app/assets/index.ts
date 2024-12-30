@@ -27,8 +27,11 @@ import uhuru from "./images/brands/uhuru.jpg"
 import floats from "./images/brands/floats.png"
 import limitless_party from "./images/limitless_party.jpeg"
 import ypit from "./images/brands/ypit.jpg"
-import ypit_mindset from "./images/brands/ypit_mindset.jpg"
+import ypit_mindset from "./images/brands/ypit_mindset.jpeg"
 import metaverse_conf from "./images/metaverse_conf.jpg"
+import dsa_bnxn from "./images/dsaxbnxn.jpeg"
+import paal from "./images/brands/paal.jpg"
+import btf from "./images/btf.jpeg"
 
 export {
   instagram_light,
@@ -61,5 +64,8 @@ export {
   limitless_party,
   ypit,
   ypit_mindset,
-  metaverse_conf
+  metaverse_conf,
+  dsa_bnxn,
+  paal,
+  btf
 };
