@@ -1,5 +1,5 @@
 import React from "react";
-import { limitless_party } from "@/app/assets";
+import { limitless_party, metaverse_conf, ypit_mindset } from "@/app/assets";
 
 export const PublicSpeakingData = [
   {
@@ -29,10 +29,10 @@ export const PublicSpeakingData = [
   {
     description: "Africa Metaverse Conference",
     title: "Tech Talks",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    src: metaverse_conf,
     ctaText: "explore",
     ctaText2: "book",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "/",
     content: () => {
       return (
         <p>
@@ -53,10 +53,10 @@ export const PublicSpeakingData = [
   {
     description: "Young People In Tech",
     title: "Motivational",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    src: ypit_mindset,
     ctaText: "explore",
     ctaText2: "book",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "/",
     content: () => {
       return (
         <p>
