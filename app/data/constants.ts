@@ -6,7 +6,7 @@ import {
   linkedin_dark,
   linkedin_light,
   twitter_dark,
-  twitter_light, uhuru
+  twitter_light, uhuru, ypit
 } from "@/app/assets";
 
 export const NavItems = [
@@ -204,5 +204,12 @@ export const ProjectsData = [
     role: "community moderator",
     image: floats
 
+  },
+  {
+    id: 4,
+    duration: "Sept 24 - Oct 24",
+    name: "ypit",
+    role: "community partner",
+    image: ypit
   }
 ] as const
