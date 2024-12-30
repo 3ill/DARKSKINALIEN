@@ -26,7 +26,7 @@ import hbb from "./images/hbb.jpeg"
 import uhuru from "./images/uhuru.jpg"
 import floats from "./images/floats.png"
 import limitless_party from "./images/limitless_party.jpeg"
-import ypit from "./images/ypit.png"
+import ypit from "./images/ypit.jpg"
 
 export {
   instagram_light,
