@@ -70,7 +70,7 @@ const Nav = () => {
             width={30}
             height={30}
             onClick={toggleTheme}
-            className={`nav_icons`}
+            className={`nav_icons ml-5`}
           />
         </div>
       </motion.nav>
