@@ -109,7 +109,7 @@ export function ServiceCard({ data }: IServiceCard) {
                       layoutId={`button-${active.title}-${id}`}
                       href={active.ctaLink}
                       target="_blank"
-                      className="rounded-full bg-neutral-50 bg-opacity-35 backdrop-blur-md px-4 py-3 font-helvetica text-sm font-bold uppercase text-white"
+                      className="rounded-full bg-green-400 bg-opacity-85 backdrop-blur-md px-4 py-3 font-helvetica text-sm font-bold uppercase text-white"
                     >
                       {active.ctaText2}
                     </motion.a>
