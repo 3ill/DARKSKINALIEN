@@ -1,4 +1,3 @@
-import React from "react";
 import {
   btf,
   dsa_bnxn,
@@ -25,8 +24,6 @@ export const PublicSpeakingData = [
           Host, I bring energy, charisma, and seamless flow to your event,
           ensuring everything runs smoothly and keeps your guests engaged from
           start to finish.
-          <br /> <br /> Ready to bring your vision to life? Book a consultation
-          today, and let&apos;s get started.
         </p>
       );
     },
@@ -49,8 +46,6 @@ export const PublicSpeakingData = [
           From AI and blockchain to cybersecurity and IoT, my talks provide your
           audience with the insights, trends, and practical knowledge they need
           to navigate today’s tech landscape.
-          <br /> <br /> Ready to bring your vision to life? Book a consultation
-          today, and let&apos;s get started.
         </p>
       );
     },
@@ -74,8 +69,6 @@ export const PublicSpeakingData = [
           personal stories, practical advice, and high-energy delivery, I help
           individuals and teams break through barriers and move toward their
           goals with renewed purpose and confidence.
-          <br /> <br /> Ready to bring your vision to life? Book a consultation
-          today, and let&apos;s get started.
         </p>
       );
     },
@@ -101,8 +94,6 @@ export const CommunityManagementData = [
           Community Management services, I help you foster genuine connections,
           drive engagement, and create a sustainable ecosystem that supports
           long-term growth.
-          <br /> <br /> Ready to bring your vision to life? Book a consultation
-          today, and let&apos;s get started.
         </p>
       );
     },
@@ -126,8 +117,29 @@ export const CommunityManagementData = [
           latest trends and technologies, I create meaningful experiences that
           drive engagement, accelerate growth, and turn your community into a
           powerful force for your brand’s success.
-          <br /> <br /> Ready to bring your vision to life? Book a consultation
-          today, and let&apos;s get started.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Paal AI",
+    title: "AI Communities",
+    src: paal,
+    ctaText: "explore",
+    ctaText2: "book",
+    ctaLink: "/",
+    content: () => {
+      return (
+        <p>
+          In the ever-evolving world of Artificial Intelligence, building and
+          maintaining a thriving community is key to fostering innovation,
+          collaboration, and real-world impact.
+          <br /> <br /> With my AI Community Management services, I help you
+          connect with thought leaders, developers, enthusiasts, and users who
+          are as passionate about AI as you are. <br /> <br /> By leveraging the
+          latest trends and technologies, I create meaningful experiences that
+          drive engagement, accelerate growth, and turn your community into a
+          powerful force for your brand’s success.
         </p>
       );
     },
@@ -149,15 +161,14 @@ export const ProjectManagementData = [
           campaigns requires precision, strategic thinking, and seamless
           execution.
           <br /> <br /> I specialize in taking your vision and turning it into a
-          reality, ensuring every detail is handled from start to finish. With a
+          reality—ensuring every detail is handled from start to finish. With a
           focus on efficiency, effective resource allocation, and clear
           communication, I manage the entire process, keeping everything on
           track and aligned with your goals.
           <br /> <br /> From initial planning to final delivery, I’m here to
           ensure your project stays on time, on budget, and exceeds
-          expectations.
-          <br /> <br /> Ready to bring your vision to life? Book a consultation
-          today, and let&apos;s get started.
+          expectations. <br /> <br /> Ready to bring your vision to life? Book a
+          consultation today, and let&apos;s get started.
         </p>
       );
     },

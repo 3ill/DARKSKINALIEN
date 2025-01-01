@@ -1,10 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  staggerContainer,
-  textVariant2,
-} from "@/app/utils/motion";
+import { staggerContainer, textVariant2 } from "@/app/utils/motion";
 import PublicSpeaking from "@/app/components/public-speaking";
 import CommunityManagement from "@/app/components/community-management";
 import ProjectManagement from "@/app/components/project-management";
@@ -17,7 +14,7 @@ const Services = () => {
       whileInView={`show`}
       viewport={{ once: true, amount: 0.25 }}
       id={`services`}
-      className={`flex min-h-screen mb-[100px] w-full flex-col pt-[450px] lg:pt-[800px]`}
+      className={`mb-[100px] flex min-h-screen w-full flex-col pt-[450px] lg:pt-[800px]`}
     >
       <motion.div
         variants={textVariant2}

@@ -8,7 +8,7 @@ import { cn } from "@/app/lib/utils";
 const CommunityManagement = () => {
   return (
     <section className={`services_container !lg:pt-[150px] !pt-[200px]`}>
-      <div className={`flex w-full`}>
+      <div className={`flex w-full items-center`}>
         <motion.div
           variants={softVariant2(0.75, 0.5)}
           initial={`hidden`}

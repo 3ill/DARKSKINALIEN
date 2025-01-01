@@ -109,7 +109,7 @@ export function ServiceCard({ data }: IServiceCard) {
                       layoutId={`button-${active.title}-${id}`}
                       href={active.ctaLink}
                       target="_blank"
-                      className="rounded-full bg-green-400  backdrop-blur-md px-4 py-3 font-helvetica text-sm font-bold uppercase text-white"
+                      className="rounded-full bg-green-400 px-4 py-3 font-helvetica text-sm font-bold uppercase text-white backdrop-blur-md"
                     >
                       {active.ctaText2}
                     </motion.a>
@@ -162,14 +162,13 @@ export function ServiceCard({ data }: IServiceCard) {
                 </motion.p>
               </div>
             </div>
-            <BackgroundGradient className={`flex items-center px-4 py-2 rounded-full`}>
-              <motion.button
-                layoutId={`button-${card.title}-${id}`}
-                className="font-helvetica text-sm font-extrabold uppercase text-neutral-100  hover:text-white"
-              >
-                {card.ctaText}
-              </motion.button>
-            </BackgroundGradient>
+
+            <motion.button
+              layoutId={`button-${card.title}-${id}`}
+              className="mt-4 rounded-full bg-primary_dark bg-opacity-65 px-4 py-2 font-helvetica text-sm font-bold uppercase text-neutral-50 backdrop-blur hover:bg-green-500 hover:text-white md:mt-0"
+            >
+              {card.ctaText}
+            </motion.button>
           </motion.div>
         ))}
       </ul>
