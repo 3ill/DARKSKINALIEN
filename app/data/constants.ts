@@ -1,3 +1,4 @@
+import React from "react";
 import {
   floats,
   hbb,
@@ -6,8 +7,16 @@ import {
   linkedin_dark,
   linkedin_light,
   twitter_dark,
-  twitter_light, uhuru, web3_global, ypit
+  twitter_light,
+  uhuru,
+  web3_global,
+  ypit,
 } from "@/app/assets";
+import {
+  IconBrandInstagram,
+  IconBrandX,
+  IconBrandLinkedin,
+} from "@tabler/icons-react";
 
 export const NavItems = [
   {
@@ -178,8 +187,9 @@ export const CarouselData = {
   },
   TechNxt: {
     title: "Oct 4th, 2022. Landmark Towers",
-    context: "An active discussion about the future and disruptive potential of Web 3.0"
-  }
+    context:
+      "An active discussion about the future and disruptive potential of Web 3.0",
+  },
 };
 
 export const ProjectsData = [
@@ -188,35 +198,61 @@ export const ProjectsData = [
     duration: "Nov 23 - Dec 24",
     name: "heads by bnxn",
     role: "community engr",
-    image: hbb
+    image: hbb,
   },
   {
     id: 2,
     duration: "Nov 22 - Oct 23",
     name: "uhuru NFT",
     role: "community engr",
-    image: uhuru
+    image: uhuru,
   },
   {
     id: 3,
     duration: "Feb 23 - Jun 23",
     name: "after hours",
     role: "community moderator",
-    image: floats
-
+    image: floats,
   },
   {
     id: 4,
     duration: "Sept 24 - Oct 24",
     name: "ypit",
     role: "community partner",
-    image: ypit
+    image: ypit,
   },
   {
     id: 5,
     duration: "Oct 6 - Nov 1",
     name: "Web3 Global",
     role: "community partner",
-    image: web3_global
-  }
-] as const
+    image: web3_global,
+  },
+] as const;
+
+export const ConnectItems = [
+  {
+    id: 1,
+    name: "instagram",
+    icon: React.createElement(IconBrandInstagram, {
+      className: "connect_icon_style",
+    }),
+    url: "",
+  },
+  {
+    id: 2,
+    name: "X",
+    icon: React.createElement(IconBrandX, {
+      className: "connect_icon_style",
+    }),
+    url: "",
+  },
+  {
+    id: 3,
+    name: "Linkedin",
+    icon: React.createElement(IconBrandLinkedin, {
+      className: "connect_icon_style",
+    }),
+    url: "",
+  },
+] as const;
