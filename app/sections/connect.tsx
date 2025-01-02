@@ -6,16 +6,16 @@ import { ConnectItems } from "../data/constants";
 const Connect = () => {
   return (
     <section
-      className={`flex h-screen w-full flex-col pt-[150px] sm:pt-[150px]`}
+      className={`flex h-screen w-full flex-col pt-[150px] sm:mb-[200px] sm:pt-[150px]`}
     >
       <Title title="Connect With Me" />
 
       <div
-        className={`relative flex h-full w-full flex-col items-center lg:flex-row lg:px-5`}
+        className={`relative flex h-full w-full flex-col items-center justify-center lg:flex-row lg:px-5`}
       >
         <GlobeDemo />
         <div
-          className={`flex flex-row items-center gap-1 lg:flex-col lg:gap-5`}
+          className={`flex w-full flex-row items-center justify-center gap-2 max-sm:-mt-[230px] lg:flex-col lg:gap-5`}
         >
           {ConnectItems.map((item) => (
             <div
@@ -25,7 +25,7 @@ const Connect = () => {
               <a href={item.url}>{item.icon}</a>
 
               <p
-                className={`hidden font-helvetica font-medium uppercase text-neutral-800 dark:text-neutral-200 lg:flex`}
+                className={`hidden pt-3 font-helvetica font-medium uppercase text-neutral-800 dark:text-neutral-200 lg:flex`}
               >
                 {item.name}
               </p>
