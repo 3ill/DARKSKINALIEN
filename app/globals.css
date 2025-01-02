@@ -15,7 +15,7 @@
   }
 
   .nav_icons {
-    @apply transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100 w-[20px] h-[20px] lg:w-[30px] lg:h-[30px]
+    @apply h-[20px] w-[20px] transform-gpu animate-spin transition-all duration-200 hover:scale-110 active:scale-100 lg:h-[30px] lg:w-[30px];
   }
 
   .text_variant {
@@ -47,23 +47,27 @@
   }
 
   .hero_image {
-    @apply absolute -right-[60px] -top-[90px] -z-50 h-[450px] w-[500px] self-end object-contain object-center sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px] motion-preset-expand motion-duration-700;
+    @apply motion-preset-expand absolute -right-[60px] -top-[90px] -z-50 h-[450px] w-[500px] self-end object-contain object-center motion-duration-700 sm:-right-[130px] sm:-top-[350px] sm:h-[600px] sm:w-[600px] lg:-top-[80px] lg:h-[850px] lg:w-[900px];
   }
 
   .services_title {
-    @apply font-helvetica text-[52px] font-extrabold uppercase leading-[46px] sm:leading-[57px] lg:leading-[71px] text-primary_dark dark:text-primary_light sm:text-[72px] lg:text-[92px]
+    @apply font-helvetica text-[52px] font-extrabold uppercase leading-[46px] text-primary_dark dark:text-primary_light sm:text-[72px] sm:leading-[57px] lg:text-[92px] lg:leading-[71px];
   }
 
   .services_container {
-    @apply flex w-full flex-col px-2 pt-5 lg:flex-row lg:justify-between
+    @apply flex w-full flex-col px-2 pt-5 lg:flex-row lg:justify-between;
   }
 
   .service_card_link_container {
-    @apply mt-[15px] flex cursor-pointer flex-row items-center justify-between rounded-[25px] bg-[#313131] bg-opacity-30 p-4 shadow hover:bg-neutral-50 dark:hover:bg-neutral-800 md:flex-row
+    @apply mt-[15px] flex cursor-pointer flex-row items-center justify-between rounded-[25px] bg-[#313131] bg-opacity-30 p-4 shadow hover:bg-neutral-50 dark:hover:bg-neutral-800 md:flex-row;
   }
 
   .service_component_wrapper {
-    @apply flex flex-col items-center justify-center lg:justify-normal w-full
+    @apply flex w-full flex-col items-center justify-center lg:justify-normal;
+  }
+
+  .connect_icon_style {
+    @apply h-[30px] w-[30px] text-neutral-900 transition-all duration-200 hover:scale-110 active:scale-100 dark:text-neutral-100 lg:h-[40px] lg:w-[40px];
   }
 }
 
