@@ -5,6 +5,7 @@ import Hero from "@/app/sections/hero";
 import About from "./sections/about";
 import Projects from "./sections/projects";
 import Services from "@/app/sections/services";
+import Connect from "./sections/connect";
 
 const Page = () => {
   return (
@@ -19,6 +20,7 @@ const Page = () => {
         <About />
         <Projects />
         <Services />
+        <Connect />
       </div>
       <Footer />
     </main>
