@@ -23,8 +23,10 @@ const Title = ({ title }: Props) => {
         className={`glow flex flex-row items-center gap-1`}
       >
         <div
-          className={`h-full w-1 rounded-md bg-primary_dark dark:bg-primary_light`}
-        />
+          className={`h-[50px] w-1 rounded-md bg-primary_dark dark:bg-primary_light`}
+        >
+          &nbsp;
+        </div>
         <p
           className={`text_variant2 font-Azeret text-[24px] font-extrabold uppercase sm:text-[40px]`}
         >
