@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "@/app/components/nav";
-import Footer from "@/app/components/footer";
 import Hero from "@/app/sections/hero";
 import About from "./sections/about";
 import Projects from "./sections/projects";
@@ -20,7 +19,6 @@ const Page = () => {
         <Projects />
         <Services />
       </div>
-      <Footer />
     </main>
   );
 };
