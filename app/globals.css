@@ -69,6 +69,14 @@
   .connect_icon_style {
     @apply h-[30px] w-[30px] text-neutral-900 transition-all duration-200 hover:scale-110 active:scale-100 dark:text-neutral-100 lg:h-[40px] lg:w-[40px];
   }
+
+  .project_header_container {
+    @apply flex w-full flex-col items-center justify-center rounded-tl-[15px] rounded-tr-[15px] bg-secondary-200 bg-opacity-50 px-5 py-20 backdrop-blur-md sm:py-24;
+  }
+
+  .project_logo_container {
+    @apply absolute -bottom-12 left-3 flex h-fit w-fit rounded-full bg-neutral-500 p-2 backdrop-blur sm:-bottom-20 lg:-bottom-24;
+  }
 }
 
 .glow {
