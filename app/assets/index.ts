@@ -12,27 +12,30 @@ import menu_close_dark from "./icons/dark/menu_close_dark.png";
 import menu_open_dark from "./icons/dark/menu_open_dark.png";
 import menu_close_light from "./icons/light/menu_close_light.png";
 import menu_open_light from "./icons/light/menu_open_light.png";
-import hero from "./images/darkskinalien_v1 1.png"
-import alien from "./images/Dsa.png"
-import dsa from "./images/dsaa.png"
-import elisium1 from "./images/elisum1.jpg"
-import elisium2 from "./images/elisum2.jpg"
-import elisimu3 from "./images/elisium3.jpg"
-import darkskinalien from "./images/darkskinalien.jpg"
-import roundtable from "./images/roundtable.jpg"
-import top_teki from "./images/top_teki(1).jpg"
-import roundtable3 from "./images/roundtable3.jpeg"
-import hbb from "./images/brands/hbb.jpeg"
-import uhuru from "./images/brands/uhuru.jpg"
-import floats from "./images/brands/floats.png"
-import limitless_party from "./images/limitless_party.jpeg"
-import ypit from "./images/brands/ypit.jpg"
-import ypit_mindset from "./images/brands/ypit_mindset.jpeg"
-import metaverse_conf from "./images/metaverse_conf.jpg"
-import dsa_bnxn from "./images/dsaxbnxn.jpeg"
-import paal from "./images/brands/paal.jpg"
-import btf from "./images/btf.jpeg"
-import web3_global from "./images/brands/web3_global.jpg"
+import hero from "./images/darkskinalien_v1 1.png";
+import alien from "./images/Dsa.png";
+import dsa from "./images/dsaa.png";
+import elisium1 from "./images/elisum1.jpg";
+import elisium2 from "./images/elisum2.jpg";
+import elisimu3 from "./images/elisium3.jpg";
+import darkskinalien from "./images/darkskinalien.jpg";
+import roundtable from "./images/roundtable.jpg";
+import top_teki from "./images/top_teki(1).jpg";
+import roundtable3 from "./images/roundtable3.jpeg";
+import hbb from "./images/brands/hbb.jpeg";
+import uhuru from "./images/brands/uhuru.jpg";
+import floats from "./images/brands/floats.png";
+import limitless_party from "./images/limitless_party.jpeg";
+import ypit from "./images/brands/ypit.jpg";
+import ypit_mindset from "./images/brands/ypit_mindset.jpeg";
+import metaverse_conf from "./images/metaverse_conf.jpg";
+import dsa_bnxn from "./images/dsaxbnxn.jpeg";
+import paal from "./images/brands/paal.jpg";
+import btf from "./images/btf.jpeg";
+import web3_global from "./images/brands/web3_global.jpg";
+import discord from "./icons/neutral/discord.png";
+import opensea from "./icons/neutral/OpenSea.png";
+import react from "./icons/neutral/react.png";
 
 export {
   instagram_light,
@@ -69,5 +72,8 @@ export {
   dsa_bnxn,
   paal,
   btf,
-  web3_global
+  web3_global,
+  discord,
+  opensea,
+  react,
 };
