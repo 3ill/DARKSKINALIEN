@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ThemeContextProvider from "@/app/context/theme.context";
+import Footer from "./components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,7 +40,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${helvetica.variable} ${thunder.variable} bg-primary_light antialiased bg-grid-black/[0.03] dark:bg-primary_dark dark:bg-grid-slate-300/[0.01]`}
       >
-        <ThemeContextProvider>{children}</ThemeContextProvider>
+        <ThemeContextProvider>
+          {children}
+          <Footer />
+        </ThemeContextProvider>
       </body>
     </html>
   );
