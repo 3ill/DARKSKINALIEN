@@ -1,4 +1,8 @@
 import Title from "@/app/components/title";
+import {
+  AnimatedTestimonials,
+  Testimonial,
+} from "@/app/components/ui/animated-testimonials";
 import { ProjectsData } from "@/app/data/constants";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
@@ -16,6 +20,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 
   const techonolgies = project?.technologies;
   const responsibility = project?.responsibility;
+  const testimonials = project?.testimonials;
 
   return (
     <section className={`flex w-full flex-col`}>
@@ -132,8 +137,13 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
       </section>
 
       {/* todo: remove redundant mb and add testimonial card */}
-      <section className={`project_section_container mb-[50px]`}>
+      <section className={`project_section_container`}>
         <Title title="testimonials" addGlow={false} />
+      </section>
+
+      {/* Testimonials Section */}
+      <section className={`project_section_container mb-[50px]`}>
+        <AnimatedTestimonials testimonials={testimonials as Testimonial[]} />
       </section>
     </section>
   );
