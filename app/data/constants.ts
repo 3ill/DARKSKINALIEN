@@ -1,13 +1,16 @@
 import React from "react";
 import {
   blockchain,
+  chikezie,
   Discord,
   floats,
+  geezy,
   hbb,
   instagram_dark,
   instagram_light,
   linkedin_dark,
   linkedin_light,
+  miracle,
   Opensea,
   react,
   solidity,
@@ -22,6 +25,42 @@ import {
   IconBrandX,
   IconBrandLinkedin,
 } from "@tabler/icons-react";
+import { Testimonial } from "../components/ui/animated-testimonials";
+
+export const HBBTestimonials = [
+  {
+    id: 1,
+    quote:
+      "DSA transformed our community by fostering creativity, increasing member engagement, and driving exponential growth in membership.",
+    name: "Iyobosa Rehoboth",
+    designation: "Project Lead",
+    src: geezy,
+  } as Testimonial,
+  {
+    id: 2,
+    quote:
+      "DSA effectively mediates between the administrative team and community members, resolving conflicts and fostering mutual understanding.",
+    name: "Miracle Otugo",
+    designation: "XR Designer",
+    src: miracle,
+  } as Testimonial,
+  {
+    id: 3,
+    quote:
+      "Through dedicated leadership and proactive initiatives, he achieved an 80% increase in both NFT sales and post engagement.",
+    name: "Chikezie Egbu",
+    designation: "Blockchain Developer",
+    src: chikezie,
+  } as Testimonial,
+  {
+    id: 4,
+    quote:
+      "DSA's weekly HBB Radio show became a highly anticipated Sunday event that I eagerly awaited.",
+    name: "City Owl",
+    designation: "Community Member",
+    src: hbb,
+  } as Testimonial,
+] as Testimonial[];
 
 export const NavItems = [
   {
@@ -278,6 +317,8 @@ export const ProjectsData = [
         },
       ],
     },
+
+    testimonials: HBBTestimonials,
   },
   {
     id: 2,
@@ -294,6 +335,7 @@ export const ProjectsData = [
       context: "",
       responsibilities: [],
     },
+    testimonials: HBBTestimonials,
   },
   {
     id: 3,
@@ -310,6 +352,7 @@ export const ProjectsData = [
       context: "",
       responsibilities: [],
     },
+    testimonials: HBBTestimonials,
   },
   {
     id: 4,
@@ -326,6 +369,7 @@ export const ProjectsData = [
       context: "",
       responsibilities: [],
     },
+    testimonials: HBBTestimonials,
   },
   {
     id: 5,
@@ -342,6 +386,7 @@ export const ProjectsData = [
       context: "",
       responsibilities: [],
     },
+    testimonials: HBBTestimonials,
   },
 ] as const;
 
