@@ -41,6 +41,8 @@ import solidity from "./icons/neutral/Solidity.png";
 import chikezie from "./images/chikezie.jpeg";
 import geezy from "./images/geezy.jpeg";
 import miracle from "./images/miracle.jpeg";
+import obinna from "./images/obinna.png";
+import ral from "./images/ral.jpg";
 
 export {
   instagram_light,
@@ -85,5 +87,7 @@ export {
   solidity,
   chikezie,
   geezy,
-  miracle
+  miracle,
+  obinna,
+  ral,
 };
