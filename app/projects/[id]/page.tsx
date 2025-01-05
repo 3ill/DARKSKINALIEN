@@ -32,7 +32,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
       initial={`hidden`}
       whileInView={`show`}
       viewport={{ once: false, amount: 0.75 }}
-      className={`flex w-full flex-col`}
+      className={`flex w-full flex-col overflow-x-hidden`}
     >
       {/* Banner and Logo */}
       <section className={`project_header_container relative`}>
