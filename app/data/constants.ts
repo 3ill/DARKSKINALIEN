@@ -1,11 +1,16 @@
 import React from "react";
 import {
+  blockchain,
+  Discord,
   floats,
   hbb,
   instagram_dark,
   instagram_light,
   linkedin_dark,
   linkedin_light,
+  Opensea,
+  react,
+  solidity,
   twitter_dark,
   twitter_light,
   uhuru,
@@ -199,6 +204,80 @@ export const ProjectsData = [
     name: "heads by bnxn",
     role: "community engr",
     image: hbb,
+    description:
+      "Heads by BNXN is an innovative NFT project reated by Afro-pop artist BNXN. Designed to strengthen the bond between the artist and his dedicated fanbase, this project leverages the Polygon blockchain to offer exclusive access to unique perks and experiences available only to loyal supporters.",
+    technologies: {
+      context:
+        "To foster seamless communication among fans, enhance interaction with the artist, and streamline the NFT purchase process, a range of technologies and tools were utilized.",
+      tools: [
+        {
+          id: 1,
+          name: "discord",
+          icon: Discord,
+        },
+        {
+          id: 2,
+          name: "opensea",
+          icon: Opensea,
+        },
+        {
+          id: 3,
+          name: "blockchain",
+          icon: blockchain,
+        },
+        {
+          id: 4,
+          name: "solidity",
+          icon: solidity,
+        },
+        {
+          id: 5,
+          name: "react",
+          icon: react,
+        },
+      ],
+    },
+    responsibility: {
+      context:
+        "My role in this project was community management, and my responsibilities include the following",
+      responsibilities: [
+        {
+          id: 1,
+          description:
+            "Cultivating an engaging and welcoming online community for fans and NFT holders.",
+        },
+        {
+          id: 2,
+          description:
+            "Managing communication channels, including Discord and social media platforms, to foster active interaction.",
+        },
+        {
+          id: 3,
+          description:
+            "Coordinating and hosting virtual events to increase engagement and strengthen fan connections with the artist.",
+        },
+        {
+          id: 4,
+          description:
+            "Coordinating and hosting virtual events to increase engagement and strengthen fan connections with the artist.",
+        },
+        {
+          id: 5,
+          description:
+            "Addressing user inquiries, resolving issues, and providing timely support to maintain a positive experience.",
+        },
+        {
+          id: 6,
+          description:
+            "Collecting and analyzing user feedback to identify improvement opportunities for community engagement.",
+        },
+        {
+          id: 7,
+          description:
+            "Collaborating with cross-functional teams to align community initiatives with broader project goals.",
+        },
+      ],
+    },
   },
   {
     id: 2,
@@ -206,6 +285,15 @@ export const ProjectsData = [
     name: "uhuru NFT",
     role: "community engr",
     image: uhuru,
+    description: "",
+    technologies: {
+      context: "",
+      tools: [],
+    },
+    responsibility: {
+      context: "",
+      responsibilities: [],
+    },
   },
   {
     id: 3,
@@ -213,13 +301,31 @@ export const ProjectsData = [
     name: "after hours",
     role: "community moderator",
     image: floats,
+    description: "",
+    technologies: {
+      context: "",
+      tools: [],
+    },
+    responsibility: {
+      context: "",
+      responsibilities: [],
+    },
   },
   {
     id: 4,
     duration: "Sept 24 - Oct 24",
-    name: "ypit",
+    name: "young people in tech",
     role: "community partner",
     image: ypit,
+    description: "",
+    technologies: {
+      context: "",
+      tools: [],
+    },
+    responsibility: {
+      context: "",
+      responsibilities: [],
+    },
   },
   {
     id: 5,
@@ -227,6 +333,15 @@ export const ProjectsData = [
     name: "Web3 Global",
     role: "community partner",
     image: web3_global,
+    description: "",
+    technologies: {
+      context: "",
+      tools: [],
+    },
+    responsibility: {
+      context: "",
+      responsibilities: [],
+    },
   },
 ] as const;
 
