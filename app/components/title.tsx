@@ -6,8 +6,9 @@ import { staggerContainer, textVariant2 } from "../utils/motion";
 
 export interface Props {
   title: string;
+  addGlow?: boolean;
 }
-const Title = ({ title }: Props) => {
+const Title = ({ title, addGlow }: Props) => {
   return (
     <motion.section
       variants={staggerContainer(0.1, 0.1)}
@@ -20,7 +21,7 @@ const Title = ({ title }: Props) => {
         variants={textVariant2}
         initial={`hidden`}
         whileInView={`show`}
-        className={`glow flex flex-row items-center gap-1`}
+        className={` ${addGlow === false ? "" : "glow"} flex flex-row items-center gap-1`}
       >
         <div
           className={`h-[50px] w-1 rounded-md bg-primary_dark dark:bg-primary_light`}
