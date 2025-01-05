@@ -99,7 +99,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
 
       {/* Role And Responsibiliites */}
       <section className={`project_section_container`}>
-        <Title title={`role and responsibilities`} addGlow={false} />
+        <Title title={`responsibilities`} addGlow={false} />
 
         <div className={`flex flex-col`}>
           <p
