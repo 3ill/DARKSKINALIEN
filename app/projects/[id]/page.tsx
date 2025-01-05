@@ -1,3 +1,5 @@
+"use client";
+
 import Title from "@/app/components/title";
 import {
   AnimatedTestimonials,
@@ -6,6 +8,8 @@ import {
 import { ProjectsData } from "@/app/data/constants";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import { softVariant2, staggerContainer } from "@/app/utils/motion";
 
 interface ProjectPageProps {
   params: {
@@ -23,7 +27,13 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
   const testimonials = project?.testimonials;
 
   return (
-    <section className={`flex w-full flex-col`}>
+    <motion.section
+      variants={staggerContainer(0.1, 0.1)}
+      initial={`hidden`}
+      whileInView={`show`}
+      viewport={{ once: false, amount: 0.75 }}
+      className={`flex w-full flex-col`}
+    >
       {/* Banner and Logo */}
       <section className={`project_header_container relative`}>
         <div className={`flex w-full justify-center`}>
@@ -44,26 +54,35 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
       {/* Description */}
       <section className={`project_section_container`}>
         <Title title="description" addGlow={false} />
-        <p
+        <motion.p
+          variants={softVariant2(0.9, 0.3)}
+          initial={`hidden`}
+          whileInView={`visible`}
           className={`text_variant2 pt-3 text-left font-grotesk text-[14px] font-light sm:text-[16px] lg:text-[18px]`}
         >
           {project?.description}
-        </p>
+        </motion.p>
       </section>
 
       {/* Technologies and Tools */}
       <section className={`project_section_container`}>
         <Title title="techology & tools" addGlow={false} />
         <div className={`flex flex-col`}>
-          <p
+          <motion.p
+            variants={softVariant2(0.9, 0.3)}
+            initial={`hidden`}
+            whileInView={`visible`}
             className={`text_variant2 pt-3 text-left font-grotesk text-[14px] font-light sm:text-[16px] lg:max-w-[600px] lg:text-[18px]`}
           >
             {techonolgies?.context}
-          </p>
+          </motion.p>
 
           <div className={`flex flex-col`}>
             {techonolgies?.tools.map((tool) => (
-              <div
+              <motion.div
+                variants={softVariant2(0.75, tool.id * 0.1)}
+                initial={`hidden`}
+                whileInView={`visible`}
                 key={tool.id}
                 className={`flex w-full flex-col items-center justify-normal pt-5`}
               >
@@ -91,7 +110,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -102,14 +121,20 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
         <Title title={`responsibilities`} addGlow={false} />
 
         <div className={`flex flex-col`}>
-          <p
+          <motion.p
+            variants={softVariant2(0.9, 0.3)}
+            initial={`hidden`}
+            animate={`visible`}
             className={`text_variant2 pt-3 text-left font-grotesk text-[14px] font-light sm:text-[16px] lg:max-w-[600px] lg:text-[18px]`}
           >
             {responsibility?.context}
-          </p>
+          </motion.p>
 
           {responsibility?.responsibilities.map((r) => (
-            <div
+            <motion.div
+              variants={softVariant2(0.75, r.id * 0.1)}
+              initial={`hidden`}
+              whileInView={`visible`}
               key={r.id}
               className={`flex w-full flex-col items-center justify-normal pt-5`}
             >
@@ -131,7 +156,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </section>
@@ -145,7 +170,7 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
       <section className={`project_section_container mb-[50px]`}>
         <AnimatedTestimonials testimonials={testimonials as Testimonial[]} />
       </section>
-    </section>
+    </motion.section>
   );
 };
 
