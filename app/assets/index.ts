@@ -33,9 +33,11 @@ import dsa_bnxn from "./images/dsaxbnxn.jpeg";
 import paal from "./images/brands/paal.jpg";
 import btf from "./images/btf.jpeg";
 import web3_global from "./images/brands/web3_global.jpg";
-import discord from "./icons/neutral/discord.png";
-import opensea from "./icons/neutral/OpenSea.png";
+import Discord from "./icons/neutral/discord.png";
+import Opensea from "./icons/neutral/OpenSea.png";
 import react from "./icons/neutral/react.png";
+import blockchain from "./icons/neutral/blockchain.png";
+import solidity from "./icons/neutral/Solidity.png";
 
 export {
   instagram_light,
@@ -73,7 +75,9 @@ export {
   paal,
   btf,
   web3_global,
-  discord,
-  opensea,
+  Discord,
+  Opensea,
   react,
+  blockchain,
+  solidity,
 };
