@@ -38,6 +38,9 @@ import Opensea from "./icons/neutral/OpenSea.png";
 import react from "./icons/neutral/react.png";
 import blockchain from "./icons/neutral/blockchain.png";
 import solidity from "./icons/neutral/Solidity.png";
+import chikezie from "./images/chikezie.jpeg";
+import geezy from "./images/geezy.jpeg";
+import miracle from "./images/miracle.jpeg";
 
 export {
   instagram_light,
@@ -80,4 +83,7 @@ export {
   react,
   blockchain,
   solidity,
+  chikezie,
+  geezy,
+  miracle
 };
