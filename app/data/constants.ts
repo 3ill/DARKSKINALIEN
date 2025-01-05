@@ -11,7 +11,9 @@ import {
   linkedin_dark,
   linkedin_light,
   miracle,
+  obinna,
   Opensea,
+  ral,
   react,
   solidity,
   twitter_dark,
@@ -60,6 +62,33 @@ export const HBBTestimonials = [
     designation: "Community Member",
     src: hbb,
   } as Testimonial,
+] as Testimonial[];
+
+export const UhuruTestimonials = [
+  {
+    id: 1,
+    quote:
+      "Dsa excels at aligning community members with a project's vision, ensuring that everyone understands and shares the same goals seamlessly.",
+    name: "Aso Obinna",
+    designation: "CEO",
+    src: obinna,
+  },
+  {
+    id: 2,
+    quote:
+      "Spreading a vision requires more than just technology—it takes people. Dsa is the perfect bridge, connecting projects with the right audience and building meaningful engagement.",
+    name: "Ral Andrew",
+    designation: "CTO",
+    src: ral,
+  },
+  {
+    id: 3,
+    quote:
+      "Hosting radio events with Dsa is always a dynamic experience. His ability to command attention, spark interest, and create an enjoyable atmosphere is truly his superpower.",
+    name: "3illBaby",
+    designation: "Community Member",
+    src: uhuru,
+  },
 ] as Testimonial[];
 
 export const NavItems = [
@@ -326,16 +355,66 @@ export const ProjectsData = [
     name: "uhuru NFT",
     role: "community engr",
     image: uhuru,
-    description: "",
+    description:
+      "Uhuru NFT is a unique collection of limited-edition Afrocentric digital art hosted on the Ethereum blockchain. Curated and created to celebrate and share the rich stories of African culture and lifestyle, this project blends traditional narratives with captivating 21st-century digital artistry.",
     technologies: {
-      context: "",
-      tools: [],
+      context:
+        "To enable smooth communication between the core team and community members while optimizing the NFT purchase process, the following technologies were utilized.",
+      tools: [
+        {
+          id: 1,
+          name: "discord",
+          icon: Discord,
+        },
+        {
+          id: 2,
+          name: "opensea",
+          icon: Opensea,
+        },
+        {
+          id: 3,
+          name: "blockchain",
+          icon: blockchain,
+        },
+        {
+          id: 4,
+          name: "solidity",
+          icon: solidity,
+        },
+        {
+          id: 5,
+          name: "react",
+          icon: react,
+        },
+      ],
     },
     responsibility: {
-      context: "",
-      responsibilities: [],
+      context:
+        "My role in this project was community management, and my responsibilities include the following",
+      responsibilities: [
+        {
+          id: 1,
+          description:
+            "Managing communication channels, including Discord and social  media platforms, to foster active interaction.",
+        },
+        {
+          id: 2,
+          description:
+            "Coordinating and hosting virtual events to increase engagement  and strengthen fan connections with the artist.",
+        },
+        {
+          id: 3,
+          description:
+            "Cultivating an engaging and welcoming online community for  fans and NFT holders.",
+        },
+        {
+          id: 4,
+          description:
+            "Collaborating with cross-functional teams to align community  initiatives with broader project goals.",
+        },
+      ],
     },
-    testimonials: HBBTestimonials,
+    testimonials: UhuruTestimonials,
   },
   {
     id: 3,
