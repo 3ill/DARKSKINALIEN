@@ -71,7 +71,7 @@
   }
 
   .project_header_container {
-    @apply flex w-full flex-col items-center justify-center rounded-tl-[15px] rounded-tr-[15px] bg-secondary-200 bg-opacity-50 px-5 py-20 backdrop-blur-md sm:py-24;
+    @apply flex w-full flex-col rounded-tl-[15px] rounded-tr-[15px] bg-secondary-200 bg-opacity-50 px-5 backdrop-blur-md;
   }
 
   .project_logo_container {
