@@ -2,10 +2,14 @@ import React from "react";
 import {
   blockchain,
   chikezie,
+  chisom,
   Discord,
+  dual_mint,
   floats,
   geezy,
+  geezy2,
   hbb,
+  hopins,
   instagram_dark,
   instagram_light,
   linkedin_dark,
@@ -16,6 +20,8 @@ import {
   ral,
   react,
   solidity,
+  tayo,
+  telegram,
   twitter_dark,
   twitter_light,
   uhuru,
@@ -90,6 +96,33 @@ export const UhuruTestimonials = [
     src: uhuru,
   },
 ] as Testimonial[];
+
+export const FloatsTestimonials = [
+  {
+    id: 1,
+    quote:
+      "Dsa expertly guided the conversation, ensuring everyone had a chance to contribute and that the discussion remained both productive and engaging",
+    name: "Tayo Aina",
+    designation: "Speaker",
+    src: tayo,
+  },
+  {
+    id: 2,
+    quote:
+      "Dsa's ability to connect with speakers and attendees alike created a truly cohesive and impactful experience.",
+    name: "Chisom Njoku",
+    designation: "Speaker",
+    src: chisom,
+  },
+  {
+    id: 3,
+    quote:
+      "Dsa's ability to manage the Q&A session and foster a positive atmosphere was truly exceptional.",
+    name: "Iyobosa Rehoboth",
+    designation: "Convener",
+    src: geezy2,
+  },
+];
 
 export const NavItems = [
   {
@@ -422,16 +455,61 @@ export const ProjectsData = [
     name: "after hours",
     role: "community moderator",
     image: floats,
-    description: "",
+    description:
+      "Afer Hours is a digital workshop developed by Floats, designed to boost the productivity of young entrepreneurs by providing insights into effective productivity strategies and mental techniques to enhance their skills and achieve higher performance.",
     technologies: {
-      context: "",
-      tools: [],
+      context:
+        "To enable seamless communication between speakers and listeners, The following technologies were used",
+      tools: [
+        {
+          id: 1,
+          name: "hopins",
+          icon: hopins,
+        },
+        {
+          id: 2,
+          name: "telegram",
+          icon: telegram,
+        },
+      ],
     },
     responsibility: {
-      context: "",
-      responsibilities: [],
+      context:
+        "My role of this project was that of an event moderator and co-host",
+      responsibilities: [
+        {
+          id: 1,
+          description:
+            "Facilitating engaging and structured discussions to ensure a smooth flow of events and maintain audience interest.",
+        },
+        {
+          id: 2,
+          description:
+            "Coordinating with speakers, panelists, and participants to create a cohesive and dynamic experience.",
+        },
+        {
+          id: 3,
+          description:
+            "Managing live Q&A sessions, moderating audience interactions, and fostering a positive and respectful environment.",
+        },
+        {
+          id: 4,
+          description:
+            "Providing insightful commentary and guiding conversations to align with the event’s themes and goals.",
+        },
+        {
+          id: 5,
+          description:
+            "Enhancing participant engagement by incorporating interactive elements and thoughtful questions.",
+        },
+        {
+          id: 6,
+          description:
+            "Collaborating with the core team to plan event agendas, structure content delivery, and execute key activities.",
+        },
+      ],
     },
-    testimonials: HBBTestimonials,
+    testimonials: FloatsTestimonials,
   },
   {
     id: 4,
@@ -456,6 +534,23 @@ export const ProjectsData = [
     name: "Web3 Global",
     role: "community partner",
     image: web3_global,
+    description: "",
+    technologies: {
+      context: "",
+      tools: [],
+    },
+    responsibility: {
+      context: "",
+      responsibilities: [],
+    },
+    testimonials: HBBTestimonials,
+  },
+  {
+    id: 6,
+    duration: "Jul 7 - Sept 23",
+    name: "Dual Mint",
+    role: "Speaker",
+    image: dual_mint,
     description: "",
     technologies: {
       context: "",
