@@ -10,6 +10,11 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { softVariant2, staggerContainer } from "@/app/utils/motion";
+import {
+  IconArrowBack,
+  IconArrowLeft,
+  IconArrowRight,
+} from "@tabler/icons-react";
 
 interface ProjectPageProps {
   params: {
@@ -36,18 +41,25 @@ const ProjectPage = ({ params }: ProjectPageProps) => {
     >
       {/* Banner and Logo */}
       <section className={`project_header_container relative`}>
-        <div className={`flex w-full justify-center`}>
-          <h1 className="motion-preset-expand font-helvetica text-[35px] font-extrabold uppercase text-neutral-50 motion-duration-700 sm:text-[62px]">
-            {project?.name}
-          </h1>
+        <div className={`flex flex-col`}>
+          <a href="/">
+            <IconArrowLeft className="mt-3 h-fit w-[20px] text-neutral-700 dark:text-neutral-200" />
+          </a>
+          <div className={`flex w-full justify-center py-20 sm:py-24`}>
+            <h1 className="motion-preset-expand font-helvetica text-[35px] font-extrabold uppercase text-neutral-50 motion-duration-700 sm:text-[62px]">
+              {project?.name}
+            </h1>
+          </div>
         </div>
 
-        <div className={`project_logo_container`}>
-          <Image
-            src={project?.image as StaticImageData}
-            alt={project?.name as string}
-            className={`inset-1/2] motion-preset-expand h-fit w-[100px] rounded-full object-contain object-center motion-duration-700 motion-delay-500 sm:w-[150px] lg:w-[200px]`}
-          />
+        <div className={`flex flex-row gap-5`}>
+          <div className={`project_logo_container`}>
+            <Image
+              src={project?.image as StaticImageData}
+              alt={project?.name as string}
+              className={`inset-1/2] motion-preset-expand h-fit w-[100px] rounded-full object-contain object-center motion-duration-700 motion-delay-500 sm:w-[150px] lg:w-[200px]`}
+            />
+          </div>
         </div>
       </section>
 
