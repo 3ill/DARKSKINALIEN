@@ -10,11 +10,7 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { softVariant2, staggerContainer } from "@/app/utils/motion";
-import {
-  IconArrowBack,
-  IconArrowLeft,
-  IconArrowRight,
-} from "@tabler/icons-react";
+import { IconArrowLeft } from "@tabler/icons-react";
 
 interface ProjectPageProps {
   params: {
