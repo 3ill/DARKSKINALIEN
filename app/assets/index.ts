@@ -43,6 +43,12 @@ import geezy from "./images/geezy.jpeg";
 import miracle from "./images/miracle.jpeg";
 import obinna from "./images/obinna.png";
 import ral from "./images/ral.jpg";
+import hopins from "./icons/neutral/hopins.png";
+import telegram from "./icons/neutral/telegram.png";
+import chisom from "./images/chisom.jpeg";
+import tayo from "./images/tayo.jpeg";
+import geezy2 from "./images/geezy2.jpeg";
+import dual_mint from "./images/brands/dual_mint.jpg";
 
 export {
   instagram_light,
@@ -90,4 +96,10 @@ export {
   miracle,
   obinna,
   ral,
+  hopins,
+  telegram,
+  tayo,
+  chisom,
+  geezy2,
+  dual_mint,
 };
