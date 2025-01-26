@@ -27,6 +27,8 @@ import {
   uhuru,
   web3_global,
   ypit,
+  ypit_media,
+  ypit_members,
 } from "@/app/assets";
 import {
   IconBrandInstagram,
@@ -121,6 +123,25 @@ export const FloatsTestimonials = [
     name: "Iyobosa Rehoboth",
     designation: "Convener",
     src: geezy2,
+  },
+];
+
+export const YpitTestimonials = [
+  {
+    id: 1,
+    quote:
+      "Dsa is a phenomental speaker, his ability to capture the audience attention is amazing",
+    name: "Sassi Osa",
+    designation: "Speaker",
+    src: ypit_media,
+  },
+  {
+    id: 2,
+    quote:
+      "Dsa's ability to connect with speakers and attendees alike created a truly cohesive and impactful experience.",
+    name: "Community Members",
+    designation: "Community Members",
+    src: ypit_members,
   },
 ];
 
@@ -517,16 +538,61 @@ export const ProjectsData = [
     name: "young people in tech",
     role: "community partner",
     image: ypit,
-    description: "",
+    description:
+      "Young People In Tech (YPIT) is a community-driven platform that connects aspiring tech professionals with industry leaders. They create inclusive environments where young talents can network, receive mentorship, and gain valuable insights from established innovators in the technology sector.",
     technologies: {
-      context: "",
-      tools: [],
+      context:
+        "To enable seamless communication between speakers and listeners, The following technologies were used",
+      tools: [
+        {
+          id: 1,
+          name: "X",
+          icon: twitter_dark,
+        },
+        {
+          id: 2,
+          name: "Instagram",
+          icon: instagram_dark,
+        },
+      ],
     },
     responsibility: {
-      context: "",
-      responsibilities: [],
+      context:
+        "My role of this project was that of an event moderator and co-host",
+      responsibilities: [
+        {
+          id: 1,
+          description:
+            "Facilitating engaging and structured discussions to ensure a smooth flow of events and maintain audience interest.",
+        },
+        {
+          id: 2,
+          description:
+            "Coordinating with speakers, panelists, and participants to create a cohesive and dynamic experience.",
+        },
+        {
+          id: 3,
+          description:
+            "Managing live Q&A sessions, moderating audience interactions, and fostering a positive and respectful environment.",
+        },
+        {
+          id: 4,
+          description:
+            "Providing insightful commentary and guiding conversations to align with the event’s themes and goals.",
+        },
+        {
+          id: 5,
+          description:
+            "Enhancing participant engagement by incorporating interactive elements and thoughtful questions.",
+        },
+        {
+          id: 6,
+          description:
+            "Collaborating with the core team to plan event agendas, structure content delivery, and execute key activities.",
+        },
+      ],
     },
-    testimonials: HBBTestimonials,
+    testimonials: YpitTestimonials,
   },
   {
     id: 5,
