@@ -49,6 +49,9 @@ import chisom from "./images/chisom.jpeg";
 import tayo from "./images/tayo.jpeg";
 import geezy2 from "./images/geezy2.jpeg";
 import dual_mint from "./images/brands/dual_mint.jpg";
+import ypit_director from "./images/ypit_director.jpeg";
+import ypit_members from "./images/ypit_members.jpeg";
+import ypit_media from "./images/ypit-hom.jpeg";
 
 export {
   instagram_light,
@@ -102,4 +105,7 @@ export {
   chisom,
   geezy2,
   dual_mint,
+  ypit_director,
+  ypit_media,
+  ypit_members,
 };
