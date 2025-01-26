@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectsData } from "@/app/data/constants";
 import { useSwipeable } from "react-swipeable";
 import { ProjectsCard } from "@/app/components/projects-card";
@@ -23,6 +23,14 @@ const ProjectCarousel = () => {
     preventScrollOnSwipe: true,
     trackMouse: true,
   });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNext();
+    }, 7000);
+
+    return () => clearInterval(timer);
+  }, []);
   return (
     <section className={`flex w-full lg:hidden`}>
       <div
@@ -39,18 +47,16 @@ const ProjectCarousel = () => {
             image={ProjectsData[dataIndex].image}
           />
 
-          <div className="mr-10 -mt-[30px] flex flex-row justify-end gap-2">
+          <div className="-mt-[30px] mr-10 flex flex-row justify-end gap-2">
             <button
               className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
               onClick={handlePrev}
-
             >
               <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
             </button>
             <button
               className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
               onClick={handleNext}
-
             >
               <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
             </button>
