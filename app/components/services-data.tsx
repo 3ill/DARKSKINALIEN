@@ -3,7 +3,6 @@ import {
   dsa_bnxn,
   limitless_party,
   metaverse_conf,
-  paal,
   ypit_mindset,
 } from "@/app/assets";
 
@@ -94,52 +93,6 @@ export const CommunityManagementData = [
           Community Management services, I help you foster genuine connections,
           drive engagement, and create a sustainable ecosystem that supports
           long-term growth.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Paal AI",
-    title: "AI Communities",
-    src: paal,
-    ctaText: "explore",
-    ctaText2: "book",
-    ctaLink: "/",
-    content: () => {
-      return (
-        <p>
-          In the ever-evolving world of Artificial Intelligence, building and
-          maintaining a thriving community is key to fostering innovation,
-          collaboration, and real-world impact.
-          <br /> <br /> With my AI Community Management services, I help you
-          connect with thought leaders, developers, enthusiasts, and users who
-          are as passionate about AI as you are. <br /> <br /> By leveraging the
-          latest trends and technologies, I create meaningful experiences that
-          drive engagement, accelerate growth, and turn your community into a
-          powerful force for your brand’s success.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Paal AI",
-    title: "AI Communities",
-    src: paal,
-    ctaText: "explore",
-    ctaText2: "book",
-    ctaLink: "/",
-    content: () => {
-      return (
-        <p>
-          In the ever-evolving world of Artificial Intelligence, building and
-          maintaining a thriving community is key to fostering innovation,
-          collaboration, and real-world impact.
-          <br /> <br /> With my AI Community Management services, I help you
-          connect with thought leaders, developers, enthusiasts, and users who
-          are as passionate about AI as you are. <br /> <br /> By leveraging the
-          latest trends and technologies, I create meaningful experiences that
-          drive engagement, accelerate growth, and turn your community into a
-          powerful force for your brand’s success.
         </p>
       );
     },
